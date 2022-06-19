@@ -47,11 +47,16 @@
 
     <div id="contenedorTabla">
         <div class="header">
-            <h2>Reporte Prestamo</h2>
+        <h2>Prestamo</h2>
+        </div>      
+        <div id="prestamo">     
         </div>
-
-        <div id="amortizaciones">
-            
+        <br>
+        <br>
+        <div class="header">
+        <h2>Amortizacion</h2>
+        </div>      
+        <div id="amortizaciones">     
         </div>
     </div>
 </body>
