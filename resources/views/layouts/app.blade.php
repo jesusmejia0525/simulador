@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet">
-    <script src="{{asset('assets/js/prestamos.js')}}" defer></script>
 </head>
 <body>
     <div id="app" class="intro" >

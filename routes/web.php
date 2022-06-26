@@ -22,4 +22,3 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware();
 Route::get('/simulador', [App\Http\Controllers\HomeController::class, 'simulador'])->name('simulador')->middleware();
 Route::get('/index', [App\Http\Controllers\PrestamoController::class, 'index'])->name('index')->middleware();
-Route::post('/tablas', [App\Http\Controllers\HomeController::class, 'tablas'])->name('tablas')->middleware();
