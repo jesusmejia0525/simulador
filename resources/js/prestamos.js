@@ -47,6 +47,7 @@ function Intereses() {
     if (primerInteres == 0) {
         intereses = tasaMensual * monto
         primerInteres = intereses
+        alert(tasaMensual)
     } else {
         intereses = tasaMensual * insoluto
     }
@@ -97,8 +98,6 @@ function simularPrestamo() {
     var cuerpoTablaP = document.createElement('tbody')
     var pieTablaP = document.createElement('tfoot')
     var filaP = document.createElement("tr")
-   
-
 
     // este for, lo utilizo para el header de la tabla
     for (let j = 0; j < miArreglo2.length; j++) {

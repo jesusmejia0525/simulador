@@ -1,20 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(to right, royalblue, darkblue);
-  font-family: 'DM Sans', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-}
 
-#contenedor, #contenedorTabla {
+
+#contenedorTa, #contenedorTabla {
   background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -193,3 +185,4 @@ table tfoot {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+ */
