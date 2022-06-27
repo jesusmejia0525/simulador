@@ -91,8 +91,61 @@ function simularPrestamo() {
 
     var acumIntereses = 0, acumImpuestos = 0, acumCapital = 0
     // Tabla Monto de prestamo
+<<<<<<< HEAD
     var miArreglo2 = ['Monto Credito','TI anual', 'Numero de Pagos','Pago Mensual']
 
+=======
+    var miArreglo2 = ['Monto Credito', 'TI anual', 'Numero de Pagos', 'Pago Mensual']
+    var tablaPrestamo = document.getElementById('prestamo')
+    var tablaP = document.createElement('table')
+    var cabeceraTablaP = document.createElement('thead')
+    var cuerpoTablaP = document.createElement('tbody')
+    var pieTablaP = document.createElement('tfoot')
+    var filaP = document.createElement("tr")
+
+    // este for, lo utilizo para el header de la tabla
+    for (let j = 0; j < miArreglo2.length; j++) {
+        var celdaP = document.createElement("td")
+        var textoP = miArreglo2[j]
+        var textoCeldaP = document.createTextNode(textoP)
+        celdaP.appendChild(textoCeldaP)
+        filaP.appendChild(celdaP)
+    }
+    cabeceraTablaP.appendChild(filaP)
+    var filaP = document.createElement("tr")
+    for (let j = 0; j < miArreglo2.length; j++) {
+        var celdaP = document.createElement("td")
+        var textoP // el texto a mostrar en la celda
+        switch (miArreglo2[j]) {
+            case 'Monto Credito':
+                textoP = '$' + monto
+                break
+            case 'TI anual':
+                textoP = tasaAnual + '%'
+                break
+            case 'Numero de Pagos':
+                textoP = plazo
+                break
+            case 'Pago Mensual':
+                textoP = '$' + mensualidad.toFixed(2)
+                break
+            default:
+                textoP = null
+                break
+        }
+        var textoCeldaP = document.createTextNode(textoP)
+        celdaP.appendChild(textoCeldaP)
+        filaP.appendChild(celdaP)
+    }
+    cuerpoTablaP.appendChild(filaP)
+
+    tablaP.appendChild(cabeceraTablaP)
+    tablaP.appendChild(cuerpoTablaP)
+    //tabla.appendChild(pieTabla)
+    tablaPrestamo.appendChild(tablaP)
+
+    //Tabla de amortizacion
+>>>>>>> parent of b3b297c (Se creo la funcionalidad de las tablas y mustra tablas correctamente)
     var miArreglo = ['No.', 'Fecha', 'Mensualidad', 'Intereses', 'Impuestos', 'Capital', 'Insoluto']
 
     var tablaAmortizaciones = document.getElementById('amortizaciones')

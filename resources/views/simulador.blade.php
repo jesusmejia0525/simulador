@@ -47,11 +47,24 @@
 
     <div id="contenedorTabla">
         <div class="header">
+<<<<<<< HEAD
             <h2>Reporte Prestamo</h2>
         </div>
 
         <div id="amortizaciones">
             
+=======
+        <h2>Prestamo</h2>
+        </div>      
+        <div id="prestamo">     
+        </div>
+        <br>
+        <br>
+        <div class="header">
+        <h2>Amortizacion</h2>
+        </div>      
+        <div id="amortizaciones">     
+>>>>>>> parent of b3b297c (Se creo la funcionalidad de las tablas y mustra tablas correctamente)
         </div>
     </div>
 </body>
