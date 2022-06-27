@@ -1,8 +1,8 @@
-var monto, plazo, tasaAnual, fecha, tasaMensual, 
-mensualidad,intereses, impuestos, capital, insoluto,
-primerInteres = 0, primerImpuesto = 0, primerCapital = 0, primerInsoluto = 0
+var monto, plazo, tasaAnual, fecha, tasaMensual,
+    mensualidad, intereses, impuestos, capital, insoluto,
+    primerInteres = 0, primerImpuesto = 0, primerCapital = 0, primerInsoluto = 0
 
-var establecerDatos = function(){
+var establecerDatos = function () {
     monto = document.getElementById('monto').value
     plazo = document.getElementById('plazo').value
     tasaAnual = document.getElementById('interes').value
@@ -16,7 +16,7 @@ var establecerDatos = function(){
     } */
 }
 
-function calcularTasaMensual(){
+function calcularTasaMensual() {
     tasaMensual = (tasaAnual / 100) / 12
     return tasaMensual
 }
@@ -59,7 +59,7 @@ function Impuestos() {
         impuestos = primerInteres
         primerImpuesto = impuestos
     } else {
-        impuestos = Intereses() 
+        impuestos = Intereses()
     }
     return impuestos
 }
@@ -91,10 +91,6 @@ function simularPrestamo() {
 
     var acumIntereses = 0, acumImpuestos = 0, acumCapital = 0
     // Tabla Monto de prestamo
-<<<<<<< HEAD
-    var miArreglo2 = ['Monto Credito','TI anual', 'Numero de Pagos','Pago Mensual']
-
-=======
     var miArreglo2 = ['Monto Credito', 'TI anual', 'Numero de Pagos', 'Pago Mensual']
     var tablaPrestamo = document.getElementById('prestamo')
     var tablaP = document.createElement('table')
@@ -145,7 +141,6 @@ function simularPrestamo() {
     tablaPrestamo.appendChild(tablaP)
 
     //Tabla de amortizacion
->>>>>>> parent of b3b297c (Se creo la funcionalidad de las tablas y mustra tablas correctamente)
     var miArreglo = ['No.', 'Fecha', 'Mensualidad', 'Intereses', 'Impuestos', 'Capital', 'Insoluto']
 
     var tablaAmortizaciones = document.getElementById('amortizaciones')
@@ -163,20 +158,20 @@ function simularPrestamo() {
         celda.appendChild(textoCelda)
         fila.appendChild(celda)
     }
-    
+
     cabeceraTabla.appendChild(fila)
 
     // este for, lo utilizo para el cuerpo de la tabla
     for (let i = 0; i < plazo; i++) {
         var intereses = Intereses(), impuestos = Impuestos(), capital = Capital(), insoluto = SaldoInsoluto()
-        
+
         var fila = document.createElement("tr")
         for (let j = 0; j < miArreglo.length; j++) {
             var celda = document.createElement("td")
             var texto // el texto a mostrar en la celda
-            switch(miArreglo[j]) {
+            switch (miArreglo[j]) {
                 case 'No.':
-                    texto = (i+1)
+                    texto = (i + 1)
                     break
                 case 'Fecha':
                     texto = fecha.getDate() + '/' + fecha.getMonth() + '/' + fecha.getFullYear()

@@ -49,13 +49,14 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <img id="logo" src="{{asset('assets/img/logo1.png')}}">
         <a1>CrediFast</a1>
+        
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about" class="page-scroll">Acerca De</a></li>
-          <li><a href="#restaurant-menu" class="page-scroll">Pasos</a></li>
+          <li><a href="#restaurant-menu" class="page-scroll">Conocenos</a></li>
           <li><a href="#team" class="page-scroll">Prestamos</a></li>
           <li><a href="#call-reservation" class="page-scroll">Preguntas Frecuentes</a></li>
           <li><a href="#contact" class="page-scroll">Contactanos</a></li>
@@ -73,7 +74,7 @@
 
             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-              {{ __('Cerrar Sesion') }}
+              {{ __('Salir Sesion') }}
             </a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -97,7 +98,8 @@
             <div class="intro-text">
               <h1>Simulador de Prestamos</h1>
               <a2>Obtén un Crédito en Efectivo de forma inmediata. Tú decides el plazo que necesitas para pagar en abonos semanales. </a2>
-              <br><a href="{{ url('/simulador') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
+              <br> class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
+              <br><a href="{{ route('simulador') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> </div>
             </div>
           </div>
         </div>
@@ -146,21 +148,22 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <div class="menu-section">
-            <h2 class="menu-section-title">Solicitud</h2>
+            <h2 class="menu-section-title">Misión</h2>
             <hr>
             <br>
             <center>
-              <p>Inicia tu solicitud en línea, de manera rápida y segura.</p>
+              <p>Nuestra misión
+Queremos transformar e impactar la vida de las personas, ayudarles a conquistar sus metas y resolver sus problemas a través de la tecnología y cuidando su salud financiera.</p>
             </center>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
           <div class="menu-section">
-            <h2 class="menu-section-title">Análisis</h2>
+            <h2 class="menu-section-title">Visión</h2>
             <hr>
             <br>
             <center>
-              <p>Evaluamos tu perfil para crear una oferta personalizada.</p>
+              <p>Ofrecer la mejor experiencia  A través de nuestra tecnología acercandonos a quienes necesitan soluciones financieras para impulsar su negocio, renovar su casa, comprar un auto, liquidar deudas o financiar un proyecto.</p>
             </center>
           </div>
         </div>
@@ -169,11 +172,12 @@
         <div class="col-xs-12 col-sm-6"></div>
       </center>
       <div class="menu-section">
-        <h2 class="menu-section-title">¡Listo!</h2>
+        <h2 class="menu-section-title">¿Quienes somos?</h2>
         <hr>
         <br>
         <center>
-          <p>Obtén tu préstamo y pon en marcha ese gran proyecto.</p>
+          <p>Hola, somos CrediFast,
+la plataforma digital de soluciones financieras, simula tu prestamo!</p>
         </center>
       </div>
     </div>
@@ -276,6 +280,9 @@
     <div>
       <p>Claro que puedes, mientras hagas el pago total del préstamo. Esto puede ser en la misma transacción de compra-venta dejando claro al comprador que primero se debe liquidar el préstamo y el remanente se te pague a ti.</p>
     </div>
+    <br>
+    <br>
+    <br>
   </details>
   <!-- Contact Section -->
   <div id="contact" class="text-center">
@@ -339,9 +346,9 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="social">
           <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/?lang=es"><i class="fa fa-twitter"></i></a></li>
+            
           </ul>
         </div>
         <p>&copy; 2022 CrediFast. All rights reserved. Designed by UTN-SYSTEM</p>
