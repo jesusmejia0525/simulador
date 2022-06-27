@@ -48,12 +48,15 @@
     <div id="contenedorTabla">
         <div class="header">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h2>Reporte Prestamo</h2>
         </div>
 
         <div id="amortizaciones">
             
 =======
+=======
+>>>>>>> parent of b3b297c (Se creo la funcionalidad de las tablas y mustra tablas correctamente)
         <h2>Prestamo</h2>
         </div>      
         <div id="prestamo">     
@@ -64,6 +67,9 @@
         <h2>Amortizacion</h2>
         </div>      
         <div id="amortizaciones">     
+<<<<<<< HEAD
+>>>>>>> parent of b3b297c (Se creo la funcionalidad de las tablas y mustra tablas correctamente)
+=======
 >>>>>>> parent of b3b297c (Se creo la funcionalidad de las tablas y mustra tablas correctamente)
         </div>
     </div>
