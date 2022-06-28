@@ -99,7 +99,7 @@
               <h1>Simulador de Prestamos</h1>
               <a2>Obtén un Crédito en Efectivo de forma inmediata. Tú decides el plazo que necesitas para pagar en abonos semanales. </a2>
               <br> class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
-              <br><a href="{{ route('simulador') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> </div>
+              <br><a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> </div>
             </div>
           </div>
         </div>

@@ -20,6 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware();
-Route::get('/simulador', [App\Http\Controllers\HomeController::class, 'simulador'])->name('simulador')->middleware();
+Route::get('/FrmAuto', [App\Http\Controllers\HomeController::class, 'FrmAuto'])->name('FrmAuto')->middleware();
 Route::get('/index', [App\Http\Controllers\PrestamoController::class, 'index'])->name('index')->middleware();
 Route::post('/tablas', [App\Http\Controllers\HomeController::class, 'tablas'])->name('tablas')->middleware();

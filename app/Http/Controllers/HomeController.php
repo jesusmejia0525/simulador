@@ -25,9 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function simulador()
+    public function FrmAuto()
     {
-        return view('simulador');
+        return view('FrmAuto');
     }
     public $monto;
     public $plazo;
