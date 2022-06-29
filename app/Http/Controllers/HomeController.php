@@ -29,6 +29,14 @@ class HomeController extends Controller
     {
         return view('FrmAuto');
     }
+    public function FrmNomina()
+    {
+        return view('FrmNomina');
+    }
+    public function FrmHipotecario()
+    {
+        return view('FrmHipotecario');
+    }
     public $monto;
     public $plazo;
     public $tasaAnual;

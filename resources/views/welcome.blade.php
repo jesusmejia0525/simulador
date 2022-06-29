@@ -98,6 +98,8 @@
             <div class="intro-text">
               <h1>Simulador de Prestamos</h1>
               <a2>Obtén un Crédito en Efectivo de forma inmediata. Tú decides el plazo que necesitas para pagar en abonos semanales. </a2>
+              <br> class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
+              <br></div>
             </div>
           </div>
         </div>
@@ -197,7 +199,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
               <div class="caption">
                 <h3>Simulador de Préstamo con garantía de automovil</h3>
                 <p>Usa tu auto para obtener mejores tasas y plazos amplios.</p>
-                <br><a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> </div>
+                <a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> 
               </div>
             </div>
           </div>
@@ -207,7 +209,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
               <div class="caption">
                 <h3>Simulador de Prestamo con Nómina</h3>
                 <p>Accede a un financiamiento para hacer realidad tus metas con ayuda de tu nómina.</p>
-                <br><a href="{{ route('FrmNomina') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> </div>
+                <a href="{{ route('FrmNomina') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> 
               </div>
             </div>
           </div>
@@ -217,7 +219,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
               <div class="caption">
                 <h3>Simulador de Prestamo Hipotecario</h3>
                 <p>Usa tu casa o departamento para obtener mejores tasas y plazos amplios.</p>
-                <br><a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> </div>
+                <a href="{{ route('FrmHipotecario') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> 
               </div>
             </div>
           </div>
