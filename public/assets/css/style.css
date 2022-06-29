@@ -33,6 +33,14 @@ body{
 	background-size: cover;
 	background-position: 25%;
 }
+.imageHipotecario{
+	float:left;
+	background-image: url("../img/desk.jpg");
+	height: 1100px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
 
 #registration-form .frmA{
 	float:right;
@@ -52,6 +60,16 @@ body{
     background-size: 100% 100%;
     background-color: white;
 }
+.frmHipotecario{
+	float:right;
+	height: 1100px;
+    width: 50%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
 
 #registration-form h1{
 	margin-top: 30px;
