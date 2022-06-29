@@ -44,6 +44,10 @@
                 <input class="form-control"  type="date" name="fecha" id="fecha" placeholder="fecha">
             </div>
             <div class="form-group">
+                <label for="monto">Monto del prestamo:</label>
+                <input class="form-control"  type="number" name="monto" id="monto" min="500">
+            </div>
+            <div class="form-group">
                 <label for="periodo">Periodo del Prestamo:</label>
                     <select class="form-control" name="periodo" id="periodo">
                         <option class="form-control"  value="semanal">semanal</option>
@@ -59,13 +63,7 @@
             <div class="form-group">
                 <label for="plazo">Plazo:</label>
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
-            </div>
-            <div class="form-group">
-                <label for="monto">Plazo:</label>
-                <input class="form-control"  type="number" name="monto" id="monto" min="500">
-            </div>
-       
-           
+            </div>       
             
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg">Simular</button>
