@@ -44,7 +44,7 @@
             </div>
             <div class="form-group">
                 <label for="correo">Correo del dueño del auto:</label>
-                <input class="form-control"  type="email" name="correo" id="correo" placeholder="Correo" pattern=".+@globex\.com" size="30" required>
+                <input class="form-control"  type="email" name="correo" id="correo" placeholder="Correo" required autocomplete="email" autofocus>
             </div>
             <div class="form-group">
                 <label for="numTel">Número telefónico del dueño del auto:</label>
