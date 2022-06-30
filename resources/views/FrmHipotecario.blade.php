@@ -15,7 +15,7 @@
                 <input class="form-control"  type="text" name="domicilio" id="domicilio" placeholder="domicilio">
             </div><div class="form-group">
                 <label for="cp">Código Postal:</label>
-                <input class="form-control"  type="number" name="cp" id="cp" placeholder="código postal">
+                <input class="form-control"  type="text" name="cp" id="cp" placeholder="código postal" required minlength="1" maxlength="6" size="10">
             </div>
             <div class="form-group">
                 <label for="seguroVida">¿Tiene seguro de Vida?:
@@ -35,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label for="cancelación">Coste de cancelación:</label>
-                <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="cancelación">
+                <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="cancelación" min="1" max="500">
             </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>

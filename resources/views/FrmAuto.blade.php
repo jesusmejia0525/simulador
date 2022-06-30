@@ -16,7 +16,7 @@
             </div>
            <div class="form-group">
                 <label for="ano">Año automovil:</label>
-                <input class="form-control"  type="text" name="ano" id="ano" placeholder="Año">
+                <input class="form-control"  type="text" name="ano" id="ano" placeholder="Año" required minlength="2" maxlength="4" size="10">
             </div>
             <div class="form-group">
                 <label for="version">Versión:</label>
@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label for="km">Kilometraje aproximado:</label>
-                <input class="form-control"  type="number" name="kilometraje" id="kilometraje" placeholder="Kilometraje">
+                <input class="form-control"  type="number" name="kilometraje" id="kilometraje" placeholder="Kilometraje" min="1" max="500">
             </div>
             <div class="form-group">
                 <label for="color">Color:</label>
@@ -36,7 +36,7 @@
             </div>
             <div class="form-group">
                 <label for="cantDueños">Cantidad de dueños que ha tenido el auto:</label>
-                <input class="form-control"  type="number" name="dueños" id="dueños" placeholder="Dueños">
+                <input class="form-control"  type="number" name="dueños" id="dueños" placeholder="Dueños" min="1" max="120" step="1">
             </div>
             <div class="form-group">
                 <label for="nombre">Nombre del dueño del auto:</label>
@@ -44,15 +44,15 @@
             </div>
             <div class="form-group">
                 <label for="correo">Correo del dueño del auto:</label>
-                <input class="form-control"  type="text" name="correo" id="correo" placeholder="Correo">
+                <input class="form-control"  type="email" name="correo" id="correo" placeholder="Correo" pattern=".+@globex\.com" size="30" required>
             </div>
             <div class="form-group">
                 <label for="numTel">Número telefónico del dueño del auto:</label>
-                <input class="form-control"  type="number" name="numTel" id="numTel" placeholder="Número Telefónico">
+                <input class="form-control"  type="text" name="numTel" id="numTel" placeholder="Número Telefónico"required minlength="1" maxlength="10" size="10">
             </div>
             <div class="form-group">
                 <label for="monto">Monto de prestamo solicitado:</label>
-                <input class="form-control"  type="number" name="monto" id="monto" placeholder="Monto">
+                <input class="form-control"  type="number" name="monto" id="monto" min="500">
             </div>
             <div class="form-group">
                 <label for="periodo">Periodos de pago:</label>
@@ -73,7 +73,7 @@
             </div>
             <div class="form-group">
                 <label for="cancelación">Coste de cancelación:</label>
-                <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="cancelación">
+                <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="cancelación" min="1" max="500">
             </div>
 
 
