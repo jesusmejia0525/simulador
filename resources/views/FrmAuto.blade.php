@@ -10,23 +10,48 @@
         <div class="form-group">
             <label for="nombre">Nombre del dueño del auto:</label>
             <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            @error('nombre')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
 
         <div class="form-group">
             <label for="marca">Marca:</label>
             <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca" required>
+            @error('marca')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="form-group">
             <label for="modelo">Modelo:</label>
             <input class="form-control"  type="text" name="modelo" id="modelo" placeholder="Modelo" required>
+            @error('modelo')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
        <div class="form-group">
             <label for="ano">Año automovil:</label>
             <input class="form-control"  type="text" name="ano" id="ano" placeholder="Año" required minlength="2" maxlength="4" size="10">
+            @error('ano')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="form-group">
             <label for="version">Versión:</label>
             <input class="form-control"  type="text" name="versiom" id="version" placeholder="Version" required>
+            @error('version')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="form-group">
             <label for="km">Kilometraje aproximado:</label>
@@ -49,14 +74,29 @@
         <div class="form-group">
             <label for="color">Color:</label>
             <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required>
+            @error('color')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="form-group">
             <label for="estado">Estado al que pertenece la placa:</label>
             <input class="form-control"  type="text" name="estPlaca" id="estPlaca" placeholder="Estado Placa" required>
+            @error('estado')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="form-group">
             <label for="monto">Monto:</label>
             <input class="form-control"  type="number" name="monto" id="monto" min="500" required>
+            @error('monto')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="form-group">
             <label for="periodo">Periodos del plazo de pago:</label>
@@ -75,6 +115,11 @@
         <div class="form-group">
             <label for="cancelación">Coste de cancelación:</label>
             <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="Cancelación" min="1" max="500" required>
+            @error('cancelación')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg">Simular</button>
