@@ -8,63 +8,66 @@
         {{ csrf_field() }}
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="nombre">
+                <input class="form-control @error('nombre') is-invalid @enderror" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                @error('nombre')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
             </div>
             <div class="form-group">
                 <label for="contrato">Tipo de contrato:</label>
-                    <select class="form-control" name="contrato" id="contrato">
-                        <option class="form-control"  value="jornada_completa">Jornada completa</option>
-                        <option class="form-control" value="jornada_parcial">Jornada parcial</option>
-                        <option class="form-control" value="contrato_indefinido">Contrato indefinido</option>
-                    </select>
-                </label>
+                <select class="form-control" name="contrato" id="contrato">
+                    <option class="form-control"  value="jornada_completa">Jornada completa</option>
+                    <option class="form-control" value="jornada_parcial">Jornada parcial</option>
+                    <option class="form-control" value="contrato_indefinido">Contrato indefinido</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="situacion_emp">Situación personal del empleado:</label>
-                    <select class="form-control" name="situacion_emp" id="situacion_emp">
-                        <option class="form-control"  value="casado">Casado</option>
-                        <option class="form-control" value="soltero">Soltero</option>
-                    </select>
-                </label>
+                <select class="form-control" name="situacion_emp" id="situacion_emp">
+                    <option class="form-control"  value="casado">Casado</option>
+                    <option class="form-control" value="soltero">Soltero</option>
+                </select>
             </div>
             <div class="form-group">
-            <label for="bj">Baja Medica:</label>
-                    <select class="form-control" name="bj" id="bj">
-                        <option class="form-control"  value="medica">Medica</option>
-                        <option class="form-control" value="peternidad">Paternidad</option>
-                    </select>
-                </label>
+                <label for="bj">Baja Medica:</label>
+                <select class="form-control" name="bj" id="bj">
+                    <option class="form-control"  value="medica">Medica</option>
+                    <option class="form-control" value="peternidad">Paternidad</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="pagos">Cantidad de pagos extras:</label>
-                <input class="form-control"  type="number" name="pagos" id="pagos" placeholder="pagos" min="1" >
+                <input class="form-control  @error('pagos') is-invalid @enderror"  type="number" name="pagos" id="pagos" placeholder="Pagos" required min="1" max="500">
+                @error('pagos')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
             </div>
-            <div class="form-group">
+             <div class="form-group">
                 <label for="fecha">Fecha:</label>
-                <input class="form-control"  type="date" name="fecha" id="fecha" placeholder="fecha">
+                <input class="form-control"  type="date" name="fecha" id="fecha" placeholder="Fecha">
             </div>
             <div class="form-group">
-                <label for="monto">Monto del prestamo:</label>
-                <input class="form-control"  type="number" name="monto" id="monto" min="500">
+                <label for="monto">Monto:</label>
+                <input class="form-control"  type="number" name="monto" id="monto" placeholder="Monto" min="500" >
             </div>
             <div class="form-group">
-                <label for="periodo">Periodo del Prestamo:</label>
-                    <select class="form-control" name="periodo" id="periodo">
-                        <option class="form-control"  value="semanal">semanal</option>
-                        <option class="form-control" value="quincenal">quincenal</option>
-                        <option class="form-control" value="mensual">mensual</option>
-                    </select>
+                <label for="periodo">Periodos del plazo de pago:</label>
+                <input class="form-control"  type="number" name="periodo" id="periodo" placeholder="Plazo" min="1" max="120" step="1" required>
+                <select class="form-control" name="periodo" id="periodo">
+                    <option class="form-control"  value="semanal">Semanal</option>
+                    <option class="form-control" value="quincenal">Quincenal</option>
+                    <option class="form-control" value="mensual">Mensual</option>
+                </select>
                 </label>
             </div>
             <div class="form-group">
                 <label for="interes">Interes:</label>
-                <input class="form-control" type="number" name="interes" id="interes" placeholder="interés" min="5" max="100" step=".01">
-            </div>
-            <div class="form-group">
-                <label for="plazo">Plazo:</label>
-                <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
-            </div>       
-            
+                <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés" min="5" max="100" step=".01">
+            </div>    
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg">Simular</button>
             </div>

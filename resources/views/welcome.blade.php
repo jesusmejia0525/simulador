@@ -349,8 +349,8 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
       <div class="col-md-8 col-md-offset-2">
         <div class="social">
           <ul>
-            <li><a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/?lang=es"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100083087078487"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/CrediFast_SP"><i class="fa fa-twitter"></i></a></li>
             
           </ul>
         </div>
