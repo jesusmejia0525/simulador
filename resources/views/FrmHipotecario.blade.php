@@ -9,28 +9,13 @@
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input id="nombre" class="form-control" name="nombre" placeholder="Nombre" type="text" required>   
-                @error('nombre')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-                @enderror
             </div>
             <div class="form-group">
                 <label for="domicilio">Domicilio:</label>
                 <input class="form-control" name="domicilio" id="domicilio" placeholder="Domicilio" type="text" required>
-                @error('domicilio')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-                @enderror
             </div><div class="form-group">
                 <label for="cp">Código Postal:</label>
                 <input class="form-control"  type="text" name="cp" id="cp" placeholder="Código postal" required minlength="1" maxlength="5">
-                @error('cp')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-                @enderror
             </div>
             <div class="form-group">
                 <label for="seguroVida">¿Tiene seguro de Vida?:

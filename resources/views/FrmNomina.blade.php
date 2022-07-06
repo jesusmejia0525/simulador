@@ -8,12 +8,7 @@
         {{ csrf_field() }}
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control @error('nombre') is-invalid @enderror" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                @error('nombre')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-                @enderror
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
             </div>
             <div class="form-group">
                 <label for="contrato">Tipo de contrato:</label>
@@ -39,12 +34,7 @@
             </div>
             <div class="form-group">
                 <label for="pagos">Cantidad de pagos extras:</label>
-                <input class="form-control  @error('pagos') is-invalid @enderror"  type="number" name="pagos" id="pagos" placeholder="Pagos" required min="1" max="500">
-                @error('pagos')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-                @enderror
+                <input class="form-control" type="number" name="pagos" id="pagos" placeholder="Pagos" required min="1" max="500">
             </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
