@@ -45,7 +45,7 @@
                     <option class="form-control" value="100,001 - 125,000">100,001 - 125,000</option>
                     <option class="form-control" value="125,001 - 150,000">125,001 - 150,000</option>
                 </select>
-        </div>
+        </div> 
         <div class="form-group">
             <label for="color">Color:</label>
             <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required>
