@@ -28,6 +28,12 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                 CrediFast  
                 </a>
+                <a class="navbar-brand" href="{{ route('login') }}">
+                Iniciar Sesion  
+                </a>
+                <a class="navbar-brand" href="{{ route('register') }}">
+                Registrar  
+                </a>
             
 
                 <div  class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,17 +46,7 @@
                     <ul class=" navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item ">
-                                    <a  class=" nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesion') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
-                                </li>
-                            @endif
+                           
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
