@@ -66,7 +66,7 @@
                 <select class="form-control" name="periodo" id="periodo" required>
                     <option class="form-control"  value="semanal">Semanal</option>
                     <option class="form-control" value="quincenal">Quincenal</option>
-                    <option class="form-control" value="mensual">Mensual</option>
+                    <option class="form-control" value="mensual">Mensual</option> 
                 </select>
                 </label>
             </div>
