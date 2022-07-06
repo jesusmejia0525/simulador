@@ -19,27 +19,27 @@ body{
 
 #registration-form .imageA{
 	float:left;
-	background-image: url("../img/desk.jpg");
+	background-image: url("../img/auto.jpg");
 	height: 1500px;
 	width: 50%;
 	background-size: cover;
-	background-position: 25%;
+	background-position: 10%;
 }
 .imageNomina{
 	float:left;
-	background-image: url("../img/desk.jpg");
+	background-image: url("../img/nomina.jpg");
 	height: 1000px;
 	width: 50%;
 	background-size: cover;
-	background-position: 25%;
+	background-position: 50%;
 }
 .imageHipotecario{
 	float:left;
-	background-image: url("../img/desk.jpg");
+	background-image: url("../img/hipoteca.jpg");
 	height: 1100px;
 	width: 50%;
 	background-size: cover;
-	background-position: 25%;
+	background-position: 50%;
 }
 
 #registration-form .frmA{
