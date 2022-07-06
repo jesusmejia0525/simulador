@@ -46,7 +46,6 @@
             </div> 
             <div class="form-group">
                 <label for="periodo">Periodos del plazo de pago:</label>
-                <input class="form-control"  type="number" name="periodo" id="periodo" placeholder="Plazo" min="1" max="120" step="1" required>
                 <select class="form-control" name="periodo" id="periodo">
                     <option class="form-control"  value="semanal">Semanal</option>
                     <option class="form-control" value="quincenal">Quincenal</option>
@@ -54,6 +53,10 @@
                 </select>
                 </label>
             </div>
+            <div class="form-group">
+                <label for="plazo">Plazo:</label>
+                <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
+            </div> 
             <div class="form-group">
                 <label for="interes">Interes:</label>
                 <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés" min="5" max="100" step=".01">

@@ -31,20 +31,20 @@
         <div class="form-group">
             <label for="km">Kilometraje aproximado:</label>
             <select class="form-control" name="km" id="km" placeholder="km" required>
-                    <option class="form-control"  value="0 - 5,000">0 - 5,000</option>
-                    <option class="form-control" value="5,001 - 10,000">5,001 - 10,000</option>
-                    <option class="form-control" value="10,001 - 20,000">10,001 - 20,000</option>
-                    <option class="form-control" value="20,001 - 30,000">20,001 - 30,000</option>
-                    <option class="form-control" value="30,001 - 40,000">30,001 - 40,000</option>
-                    <option class="form-control" value="40,001 - 50,000">40,001 - 50,000</option>
-                    <option class="form-control" value="50,001 - 60,000">50,001 - 60,000</option>
-                    <option class="form-control" value="60,001 - 70,000">60,001 - 70,000</option>
-                    <option class="form-control" value="70,001 - 80,000">70,001 - 80,000</option>
-                    <option class="form-control" value="80,001 - 90,000">80,001 - 90,000</option>
-                    <option class="form-control" value="90,001 - 100,000">90,001 - 100,000</option>
-                    <option class="form-control" value="100,001 - 125,000">100,001 - 125,000</option>
-                    <option class="form-control" value="125,001 - 150,000">125,001 - 150,000</option>
-                </select>
+                <option class="form-control"  value="0 - 5,000">0 - 5,000</option>
+                <option class="form-control" value="5,001 - 10,000">5,001 - 10,000</option>
+                <option class="form-control" value="10,001 - 20,000">10,001 - 20,000</option>
+                <option class="form-control" value="20,001 - 30,000">20,001 - 30,000</option>
+                <option class="form-control" value="30,001 - 40,000">30,001 - 40,000</option>
+                <option class="form-control" value="40,001 - 50,000">40,001 - 50,000</option>
+                <option class="form-control" value="50,001 - 60,000">50,001 - 60,000</option>
+                <option class="form-control" value="60,001 - 70,000">60,001 - 70,000</option>
+                <option class="form-control" value="70,001 - 80,000">70,001 - 80,000</option>
+                <option class="form-control" value="80,001 - 90,000">80,001 - 90,000</option>
+                <option class="form-control" value="90,001 - 100,000">90,001 - 100,000</option>
+                <option class="form-control" value="100,001 - 125,000">100,001 - 125,000</option>
+                <option class="form-control" value="125,001 - 150,000">125,001 - 150,000</option>
+            </select>
         </div> 
         <div class="form-group">
             <label for="color">Color:</label>
@@ -59,15 +59,18 @@
             <input class="form-control"  type="number" name="monto" id="monto" min="500" required>
         </div>
         <div class="form-group">
-            <label for="periodo">Periodos del plazo de pago:</label>
-            <input class="form-control"  type="number" name="periodo" id="periodo" placeholder="Plazo" min="1" max="120" step="1"required>
-            <select class="form-control" name="periodo" id="periodo">
-                <option class="form-control"  value="semanal">Semanal</option>
-                <option class="form-control" value="quincenal">Quincenal</option>
-                <option class="form-control" value="mensual">Mensual</option>
-            </select>
-            </label>
-        </div>
+                <label for="periodo">Periodos del plazo de pago:</label>
+                <select class="form-control" name="periodo" id="periodo">
+                    <option class="form-control"  value="semanal">Semanal</option>
+                    <option class="form-control" value="quincenal">Quincenal</option>
+                    <option class="form-control" value="mensual">Mensual</option>
+                </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="plazo">Plazo:</label>
+                <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
+            </div>
         <div class="form-group">
             <label for="interes">Interes:</label>
             <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés" min="5" max="100" step=".01">
