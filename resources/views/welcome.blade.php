@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -98,8 +98,7 @@
             <div class="intro-text">
               <h1>Simulador de Prestamos</h1>
               <a2>Obtén un Crédito en Efectivo de forma inmediata. Tú decides el plazo que necesitas para pagar en abonos semanales. </a2>
-              <br> class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
-              <br></div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,7 +110,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6 ">
-          <div class="about-img"><img id="img-about" src="{{asset('assets/img/about.jpg')}}" class="img-responsive" alt=""></div>
+          <div class="about-img"><img id="img-about" src="{{asset('assets/img/prestamos.jpg')}}" class="img-responsive" alt=""></div>
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="about-text">
@@ -292,33 +291,6 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
     <div class="container">
       <div class="section-title text-center">
         <h2>Contactanos</h2>
-        <hr>
-        <p>¿Tienes alguna duda?, No dudes en comunicarte con nosotros.</p>
-      </div>
-      <div class="col-md-10 col-md-offset-1">
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Correo Electronico" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-            <p class="help-block text-danger"></p>
-          </div>
-          <div id="success"></div>
-          <button type="submit" class="btn btn-custom btn-lg">Enviar Mensaje</button>
-        </form>
-      </div>
     </div>
   </div>
   <div id="footer">
