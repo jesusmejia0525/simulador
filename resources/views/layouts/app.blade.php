@@ -45,7 +45,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class=" navbar-nav ms-auto">
                         <!-- Authentication Links -->
-                        @guest
+                        @guest 
                            
                         @else
                             <li class="nav-item dropdown">
