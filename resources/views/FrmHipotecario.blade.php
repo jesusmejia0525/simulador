@@ -8,14 +8,14 @@
             {{ csrf_field() }}
         <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="nombre" required>
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z]{3,100}">
             </div>
             <div class="form-group">
                 <label for="domicilio">Domicilio:</label>
-                <input class="form-control"  type="text" name="domicilio" id="domicilio" placeholder="domicilio" required>
+                <input class="form-control"  type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
             </div><div class="form-group">
                 <label for="cp">Código Postal:</label>
-                <input class="form-control"  type="text" name="cp" id="cp" placeholder="código postal" required minlength="1" maxlength="6" size="10">
+                <input class="form-control"  type="text" name="cp" id="cp" placeholder="Código postal" required minlength="1" maxlength="6" size="10" pattern="[0-9]{3,100}">
             </div>
             <div class="form-group">
                 <label for="seguroVida">¿Tiene seguro de Vida?:
@@ -35,15 +35,15 @@
             </div>
             <div class="form-group">
                 <label for="cancelación">Coste de cancelación:</label>
-                <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="cancelación" min="1" max="500" required>
+                <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="Cancelación %" min="5" max="100" required>
             </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
-                <input class="form-control"  type="date" name="fecha" id="fecha" placeholder="fecha" required>
+                <input class="form-control"  type="date" name="fecha" id="fecha" placeholder="Fecha" required>
             </div>
             <div class="form-group">
                 <label for="monto">Monto:</label>
-                <input class="form-control"  type="number" name="monto" id="monto" placeholder="monto" min="500" required>
+                <input class="form-control"  type="number" name="monto" id="monto" placeholder="Monto" min="500" required>
             </div>
             <div class="form-group">
                 <label for="periodo">Periodos del plazo de pago:</label>
@@ -55,12 +55,12 @@
                 </label>
             </div>
             <div class="form-group">
-                <label for="plazo">Plazo:</label>
+                <label for="plazo">Duración del plazo:</label>
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
             </div>
             <div class="form-group">
                 <label for="interes">Interes:</label>
-                <input class="form-control" type="number" name="interes" id="interes" placeholder="interés" min="5" max="100" step=".01" required>
+                <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01" required > 
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg">Simular</button>

@@ -8,7 +8,7 @@
         {{ csrf_field() }}
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z]{3,100}">
             </div>
             <div class="form-group">
                 <label for="contrato">Tipo de contrato:</label>
@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label for="pagos">Cantidad de pagos extras:</label>
-                <input class="form-control" type="number" name="pagos" id="pagos" placeholder="Pagos" required min="1" max="500">
+                <input class="form-control" type="number" name="pagos" id="pagos" placeholder="Pagos" required step="1" min="1" max="100" >
             </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
@@ -54,12 +54,12 @@
                 </label>
             </div>
             <div class="form-group">
-                <label for="plazo">Plazo:</label>
+                <label for="plazo">Duración del plazo:</label>
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
             </div> 
             <div class="form-group">
                 <label for="interes">Interes:</label>
-                <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés" min="5" max="100" step=".01">
+                <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01">
             </div>    
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg">Simular</button>
