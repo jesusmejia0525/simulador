@@ -6,12 +6,11 @@
         <h3 id="h1-form">Ingrese los datos de su préstamo hipotecario automóvil</h3>
         <form action="{{ route ('tablas')}}" method="POST">
         {{ csrf_field() }}
-
+        
         <div class="form-group">
             <label for="nombre">Nombre del dueño del auto:</label>
             <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required>
         </div>
-
         <div class="form-group">
             <label for="marca">Marca:</label>
             <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca" required>
