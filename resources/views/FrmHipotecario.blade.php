@@ -51,7 +51,7 @@
                     <option class="form-control"  value="semanal">Semanal</option>
                     <option class="form-control" value="quincenal">Quincenal</option>
                     <option class="form-control" value="mensual">Mensual</option>
-                </select>
+                </select> 
                 </label>
             </div>
             <div class="form-group">

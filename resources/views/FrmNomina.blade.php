@@ -18,7 +18,7 @@
                     <option class="form-control" value="contrato_indefinido">Contrato indefinido</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group"> 
                 <label for="situacion_emp">Situación personal del empleado:</label>
                 <select class="form-control" name="situacion_emp" id="situacion_emp">
                     <option class="form-control"  value="casado">Casado</option>

@@ -28,7 +28,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                 CrediFast  
                 </a>
-                <a class="navbar-brand" href="{{ route('login') }}">
+                <a class="navbar-brand" href="{{ route('login') }}"> 
                 Iniciar Sesion  
                 </a>
                 <a class="navbar-brand" href="{{ route('register') }}">
