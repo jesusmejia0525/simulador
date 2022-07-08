@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container" id="registration-form">
-    <div class="imageNomina"></div>
+    <div class="imageNomina"></div> 
     <div class="frmNomina">
         <h3 id="h1-form">Ingrese los datos de su nomina</h3>
         <form action="{{ route ('tablas')}}" method="POST">

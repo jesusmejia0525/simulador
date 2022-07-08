@@ -43,7 +43,7 @@
             </div>
             <div class="form-group">
                 <label for="monto">Monto:</label>
-                <input class="form-control"  type="number" name="monto" id="monto" placeholder="Monto" min="500" required>
+                <input class="form-control"  type="number" name="monto" id="monto" placeholder="Monto" min="500" required >
             </div>
             <div class="form-group">
                 <label for="periodo">Periodos del plazo de pago:</label>

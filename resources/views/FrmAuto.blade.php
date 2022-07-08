@@ -5,7 +5,7 @@
     <div class="frmA">
         <h3 id="h1-form">Ingrese los datos de su préstamo hipotecario automóvil</h3>
         <form action="{{ route ('tablas')}}" method="POST">
-        {{ csrf_field() }}
+        {{ csrf_field() }} 
         <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z]{3,100}">
