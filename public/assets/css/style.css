@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif; 
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
@@ -11,7 +11,7 @@ body, html {
 body{
 	background-color: transparent;
 }
-
+ 
 #registration-form{
 	max-width: 800px;
 	margin: 120px auto;
@@ -20,8 +20,8 @@ body{
 #registration-form .imageA{
 	float:left;
 	background-image: url("../img/auto.jpg");
-	height: 1500px;
-	width: 50%;
+	height: 1300px;
+	width: 45%;
 	background-size: cover;
 	background-position: 10%;
 }
@@ -29,7 +29,7 @@ body{
 	float:left;
 	background-image: url("../img/nomina.jpg");
 	height: 1000px;
-	width: 50%;
+	width: 45%;
 	background-size: cover;
 	background-position: 50%;
 }
@@ -37,15 +37,15 @@ body{
 	float:left;
 	background-image: url("../img/hipoteca.jpg");
 	height: 1100px;
-	width: 50%;
+	width: 45%;
 	background-size: cover;
 	background-position: 50%;
 }
 
 #registration-form .frmA{
 	float:right;
-	height: 1500px;
-    width: 50%;
+	height: 1300px;
+    width: 55%;
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
@@ -54,7 +54,7 @@ body{
 .frmNomina{
 	float:right;
 	height: 1000px;
-    width: 50%;
+    width: 55%;
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
@@ -63,7 +63,7 @@ body{
 .frmHipotecario{
 	float:right;
 	height: 1100px;
-    width: 50%;
+    width: 55%;
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;

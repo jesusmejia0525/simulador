@@ -10,7 +10,7 @@
   <title>CrediFast</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script> 
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,46 +28,33 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                 CrediFast  
                 </a>
-                <a class="navbar-brand" href="{{ route('login') }}">
+                <a class="navbar-brand" href="{{ route('login') }}"> 
                 Iniciar Sesion  
                 </a>
                 <a class="navbar-brand" href="{{ route('register') }}">
                 Registrar  
                 </a>
-            
 
-                <div  class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                <ul class=" navbar-nav ms-auto">
+                  <!-- Authentication Links -->
+                  @guest
+                            
+                  @else
+                  <li class="nav-item dropdown">
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class=" navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                           
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
+                    <div aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">
+                      {{ __('Cerrar sesión') }}
+                      </a>
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                      </form>
+                    </div>
+                  </li>
+                  @endguest
+                </ul>
             </div>
         </nav>
 
