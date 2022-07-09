@@ -8,7 +8,7 @@
         {{ csrf_field() }}
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z]{3,100}">
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
             </div>
             <div class="form-group">
                 <label for="contrato">Tipo de contrato:</label>

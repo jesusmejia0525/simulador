@@ -8,15 +8,15 @@
         {{ csrf_field() }} 
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z]{3,100}">
+            <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
         </div>
         <div class="form-group">
             <label for="marca">Marca:</label>
-            <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca" required pattern="[A-Za-z]{3,100}">
+            <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca" required pattern="[A-Za-z ]{3,100}">
         </div>
         <div class="form-group">
             <label for="modelo">Modelo:</label>
-            <input class="form-control"  type="text" name="modelo" id="modelo" placeholder="Modelo" required>
+            <input class="form-control"  type="text" name="modelo" id="modelo" placeholder="Modelo" required pattern="[A-Za-z ]{3,100}">
         </div>
        <div class="form-group">
             <label for="ano">Año automóvil:</label>
@@ -48,7 +48,7 @@
         </div>
         <div class="form-group">
             <label for="version">Versión:</label>
-            <input class="form-control"  type="text" name="versiom" id="version" placeholder="Versión" required>
+            <input class="form-control"  type="text" name="version" id="version" placeholder="Versión" required pattern="[0-9 ]{1}[A-Za-z ]{0,100}">
         </div>
         <div class="form-group">
             <label for="km">Kilometraje aproximado:</label>
@@ -70,11 +70,11 @@
         </div> 
         <div class="form-group">
             <label for="color">Color del automóvil:</label>
-            <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required pattern="[A-Za-z]">
+            <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required pattern="[A-Za-z ]{3,100}">
         </div>
         <div class="form-group">
             <label for="estPlaca">Estado al que pertenece la placa:</label>
-            <input class="form-control"  type="text" name="estPlaca" id="estPlaca" placeholder="Estado Placa" required>
+            <input class="form-control"  type="text" name="estPlaca" id="estPlaca" placeholder="Estado Placa" required pattern="[A-Za-z ]{1,100}">
         </div>
         <div class="form-group">
             <label for="monto">Monto:</label>
