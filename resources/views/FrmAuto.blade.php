@@ -8,15 +8,19 @@
         {{ csrf_field() }} 
         <div class="form-group">
             <label for="nombre">Nombre:</label>
+<<<<<<< HEAD
             <input class="form-control"  type="text" value="{{Auth::user()->name}}" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
+=======
+            <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Z a-z]{3,100}">
+>>>>>>> c1ce92507a1bd73b0c1b7598f3a90b9b54fcc3d6
         </div>
         <div class="form-group">
             <label for="marca">Marca:</label>
-            <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca" required pattern="[A-Za-z ]{3,100}">
+            <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca" required pattern="[A-Z a-z]{3,100}">
         </div>
         <div class="form-group">
             <label for="modelo">Modelo:</label>
-            <input class="form-control"  type="text" name="modelo" id="modelo" placeholder="Modelo" required pattern="[A-Za-z ]{3,100}">
+            <input class="form-control"  type="text" name="modelo" id="modelo" placeholder="Modelo" required pattern="[A-Z a-z]{3,100}">
         </div>
        <div class="form-group">
             <label for="ano">Año automóvil:</label>
@@ -48,7 +52,7 @@
         </div>
         <div class="form-group">
             <label for="version">Versión:</label>
-            <input class="form-control"  type="text" name="version" id="version" placeholder="Versión" required pattern="[0-9 ]{1}[A-Za-z ]{0,100}">
+            <input class="form-control"  type="text" name="versiom" id="version" placeholder="Versión" required pattern="{3,100}">
         </div>
         <div class="form-group">
             <label for="km">Kilometraje aproximado:</label>
@@ -70,10 +74,11 @@
         </div> 
         <div class="form-group">
             <label for="color">Color del automóvil:</label>
-            <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required pattern="[A-Za-z ]{3,100}">
+            <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required pattern="[A-Z a-z]{3,100}">
         </div>
         <div class="form-group">
             <label for="estPlaca">Estado al que pertenece la placa:</label>
+<<<<<<< HEAD
             <select class="form-control" name="ano" id="ano" placeholder="Año" required>
                 <option class="form-control" value="Aguascalientes">Aguascalientes</option>
                 <option class="form-control" value="Baja California">Baja California</option>
@@ -108,6 +113,9 @@
                 <option class="form-control" value="Zacatecas">Zacatecas</option>
             </select>
 
+=======
+            <input class="form-control"  type="text" name="estPlaca" id="estPlaca" placeholder="Estado Placa" required>
+>>>>>>> c1ce92507a1bd73b0c1b7598f3a90b9b54fcc3d6
         </div>
         <div class="form-group">
             <label for="monto">Monto:</label>
@@ -124,11 +132,16 @@
             </div>
             <div class="form-group">
                 <label for="plazo">Duración del plazo:</label>
-                <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
+                <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1"required>
             </div>
         <div class="form-group">
+<<<<<<< HEAD
             <label  for="interes">Interes:</label>
             <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01">
+=======
+            <label for="interes">Interes:</label>
+            <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01" required>
+>>>>>>> c1ce92507a1bd73b0c1b7598f3a90b9b54fcc3d6
         </div>
         <div class="form-group">
             <label for="cancelación">Coste de cancelación:</label>
