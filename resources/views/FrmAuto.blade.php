@@ -8,7 +8,7 @@
         {{ csrf_field() }} 
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input class="form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
+            <input class="form-control"  type="text" value="{{Auth::user()->name}}" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
         </div>
         <div class="form-group">
             <label for="marca">Marca:</label>
@@ -74,7 +74,40 @@
         </div>
         <div class="form-group">
             <label for="estPlaca">Estado al que pertenece la placa:</label>
-            <input class="form-control"  type="text" name="estPlaca" id="estPlaca" placeholder="Estado Placa" required pattern="[A-Za-z ]{1,100}">
+            <select class="form-control" name="ano" id="ano" placeholder="Año" required>
+                <option class="form-control" value="Aguascalientes">Aguascalientes</option>
+                <option class="form-control" value="Baja California">Baja California</option>
+                <option class="form-control" value="Campeche">Campeche</option>
+                <option class="form-control" value="Chiapas">Chiapas</option>
+                <option class="form-control" value="Chihuahua">Chihuahua</option>
+                <option class="form-control" value="Ciudad de Mexico">Ciudad de México</option>
+                <option class="form-control" value="Coahuila de Zaragoza">Coahuila de Zaragoza</option>
+                <option class="form-control" value="Colima">Colima</option>
+                <option class="form-control" value="Durango">Durango</option>      
+                <option class="form-control" value="Guanajuato">Guanajuato</option>
+                <option class="form-control" value="Guerrero">Guerrero</option>
+                <option class="form-control" value="Hidalgo">Hidalgo</option>
+                <option class="form-control" value="Jalisco">Jalisco</option>
+                <option class="form-control" value="Estado de Mexico">Estado de México</option>
+                <option class="form-control" value="Michoacan">Michoacán</option>
+                <option class="form-control" value="Morelos">Morelos</option>
+                <option class="form-control" value="Nayarit">Nayarit</option>
+                <option class="form-control" value="Nuevo Leon">Nuevo León</option>
+                <option class="form-control" value="Oaxaca">Oaxaca</option>
+                <option class="form-control" value="Puebla">Puebla</option>
+                <option class="form-control" value="Queretaro">Querétaro</option>
+                <option class="form-control" value="Quintana Roo">Quintana Roo</option>
+                <option class="form-control" value="San Luis Potosí">San Luis Potosí</option>
+                <option class="form-control" value="Sinaloa">Sinaloa</option>
+                <option class="form-control" value="Sonora">Sonora</option>
+                <option class="form-control" value="Tabasco">Tabasco</option>
+                <option class="form-control" value="Tamaulipas">Tamaulipas</option>
+                <option class="form-control" value="Tlaxcala">Tlaxcala</option>
+                <option class="form-control" value="Veracruz">Veracruz</option>
+                <option class="form-control" value="Yucatan">Yucatán</option>
+                <option class="form-control" value="Zacatecas">Zacatecas</option>
+            </select>
+
         </div>
         <div class="form-group">
             <label for="monto">Monto:</label>
@@ -94,7 +127,7 @@
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
             </div>
         <div class="form-group">
-            <label for="interes">Interes:</label>
+            <label  for="interes">Interes:</label>
             <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01">
         </div>
         <div class="form-group">

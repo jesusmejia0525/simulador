@@ -8,7 +8,7 @@
             {{ csrf_field() }}
         <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z]{3,100}">
+                <input class="form-control" type="text" value="{{Auth::user()->name}}" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
             </div>
             <div class="form-group">
                 <label for="domicilio">Domicilio:</label>
@@ -55,7 +55,7 @@
                 </label>
             </div>
             <div class="form-group">
-                <label for="plazo">Duración del plazo:</label>
+                <label for="plazo">Numero de plazos:</label>
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
             </div>
             <div class="form-group">

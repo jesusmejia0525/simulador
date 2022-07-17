@@ -13,8 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Correo o contraseña invalido.',
+     'failed' => 'Correo o contraseña invalido.',
     'password' => 'Contraseña incorrecta.',
     'throttle' => 'Demasiados intentos, intentalos más tardes.',
-
 ];

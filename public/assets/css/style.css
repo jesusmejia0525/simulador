@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Raleway', sans-serif; 
+	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
@@ -11,7 +11,7 @@ body, html {
 body{
 	background-color: transparent;
 }
- 
+
 #registration-form{
 	max-width: 800px;
 	margin: 120px auto;
@@ -20,8 +20,8 @@ body{
 #registration-form .imageA{
 	float:left;
 	background-image: url("../img/auto.jpg");
-	height: 1300px;
-	width: 45%;
+	height: 1500px;
+	width: 50%;
 	background-size: cover;
 	background-position: 10%;
 }
@@ -29,7 +29,7 @@ body{
 	float:left;
 	background-image: url("../img/nomina.jpg");
 	height: 1000px;
-	width: 45%;
+	width: 50%;
 	background-size: cover;
 	background-position: 50%;
 }
@@ -37,15 +37,15 @@ body{
 	float:left;
 	background-image: url("../img/hipoteca.jpg");
 	height: 1100px;
-	width: 45%;
+	width: 50%;
 	background-size: cover;
 	background-position: 50%;
 }
 
 #registration-form .frmA{
 	float:right;
-	height: 1300px;
-    width: 55%;
+	height: 1500px;
+    width: 50%;
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
@@ -54,7 +54,7 @@ body{
 .frmNomina{
 	float:right;
 	height: 1000px;
-    width: 55%;
+    width: 50%;
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
@@ -63,7 +63,7 @@ body{
 .frmHipotecario{
 	float:right;
 	height: 1100px;
-    width: 55%;
+    width: 50%;
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
@@ -85,27 +85,53 @@ body{
 	height: auto;
 }
 
+
 @media screen and (max-width: 700px){
-	#registration-form .image{
+	#registration-form .imageA{
+		width: 30%;
+	    background-position: 60%;
+	}
+	#registration-form .imageHipotecario{
+		width: 30%;
+	    background-position: 60%;
+	}
+	#registration-form .imageNomina{
 		width: 30%;
 	    background-position: 60%;
 	}
 
-	#registration-form .frm{
+	#registration-form .frmA{
 		width: 70%;
 	}
-
+	#registration-form .frmHipotecario{
+		width: 70%;
+	}
+	#registration-form .frmNomina{
+		width: 70%;
+	}
 	#registration-form .form-control{
 		width: 100%;
 	}
 }
 
 @media screen and (max-width: 500px){
-	#registration-form .image{
+	#registration-form .imageNomina{
+		display: none;
+	}
+	#registration-form .imageA{
+		display: none;
+	}
+	#registration-form .imageHipotecario{
 		display: none;
 	}
 
-	#registration-form .frm{
+	#registration-form .frmNomina{
+		width: 100%;
+	}
+	#registration-form .frmA{
+		width: 100%;
+	}
+	#registration-form .frmHipotecario{
 		width: 100%;
 	}
 
@@ -153,7 +179,7 @@ a {
 	color: #8eb640;
 }
 a1 {
-	color: #a79e9e;
+	color: #ffffff;
 	font-size: 30px;
 }
 a2 {

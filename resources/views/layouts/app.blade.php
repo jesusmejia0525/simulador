@@ -10,7 +10,7 @@
   <title>CrediFast</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script> 
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,33 +28,44 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                 CrediFast  
                 </a>
-                <a class="navbar-brand" href="{{ route('login') }}"> 
-                Iniciar Sesion  
-                </a>
-                <a class="navbar-brand" href="{{ route('register') }}">
-                Registrar  
-                </a>
+              
+      
 
-                <ul class=" navbar-nav ms-auto">
-                  <!-- Authentication Links -->
-                  @guest
-                            
-                  @else
-                  <li class="nav-item dropdown">
+                    <!-- Right Side Of Navbar -->
+                    <ul class=" navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+            @guest
 
-                    <div aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="{{ route('logout') }}"
-                      onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                      {{ __('Cerrar sesión') }}
-                      </a>
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                      </form>
-                    </div>
-                  </li>
-                  @endguest
-                </ul>
+          @if (Route::has('login'))
+          <a class="navbar-brand" href="{{ route('login') }}">
+            Iniciar Sesion
+          </a>
+          <a class="navbar-brand" href="{{ route('register') }}">
+            Registrar
+          </a>
+          @endif
+
+          @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Cerrar Sesion') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+          
             </div>
         </nav>
 
@@ -80,8 +91,8 @@
     <div class="col-md-4">
       <h3>Información de Contacto</h3>
       <div class="contact-item">
-        <p>Celular: +52 55 62 40 12 62</p>
-        <p>Correo: credifast@company.com</p>
+               <p><a href="tel:tel:5562401262">Celular: +52 55 62 40 12 62</a></p>
+          <p><a href="mailto:credifast@company.com"> Correo:credifast@company.com</a></p>
       </div>
     </div>
   </div>

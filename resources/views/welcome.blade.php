@@ -59,7 +59,7 @@
           <li><a href="#restaurant-menu" class="page-scroll">Conocenos</a></li>
           <li><a href="#team" class="page-scroll">Prestamos</a></li>
           <li><a href="#call-reservation" class="page-scroll">Preguntas Frecuentes</a></li>
-          <li><a href="#contact" class="page-scroll">Contactanos</a></li>
+        
           @guest
           @if (Route::has('login'))
           <li class="nav-item">
@@ -287,12 +287,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
     <br>
   </details>
   <!-- Contact Section -->
-  <div id="contact" class="text-center">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Contactanos</h2>
-    </div>
-  </div>
+
   <div id="footer">
     <div class="container text-center">
       <div class="col-md-4">
@@ -312,8 +307,8 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
       <div class="col-md-4">
         <h3>Información de Contacto</h3>
         <div class="contact-item">
-          <p>Celular: +52 55 62 40 12 62</p>
-          <p>Correo: credifast@company.com</p>
+          <p><a href="tel:tel:5562401262">Celular: +52 55 62 40 12 62</a></p>
+          <p><a href="mailto:credifast@company.com"> Correo:credifast@company.com</a></p>
         </div>
       </div>
     </div>
