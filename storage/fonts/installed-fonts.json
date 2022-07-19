@@ -1,0 +1,22 @@
+{
+    "fontawesome": {
+        "normal": "fontawesome_normal_c32d1e549e11e22781c051868524e2a7"
+    },
+    "raleway": {
+        "300": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/raleway_300_03f1220312a8a49d56752227abd09b6c",
+        "normal": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/raleway_normal_3fc5eee72db562370e3a32337da4d6f1",
+        "500": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/raleway_500_b8a76f5d29584d4e90f55feea0349c86",
+        "600": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/raleway_600_680162e22c2503082b6c31a243da744a",
+        "bold": "raleway_bold_e878667000f96d9e51dcca4bb7e59ed4"
+    },
+    "open sans": {
+        "300": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/open_sans_300_2897ef841755d029cd79326b3a4893ba",
+        "normal": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/open_sans_normal_43013991c496206686b3f0c129197ee5",
+        "600": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/open_sans_600_8713e264d508a0cdfceaa6576eaded06",
+        "bold": "open_sans_bold_96e606aebf881f427389c3b892029fd5"
+    },
+    "dancing script": {
+        "normal": "C:\\xampp\\htdocs\\simulador-prestamo\\storage\\fonts\/dancing_script_normal_f061c945f3e1444fb1291734673b722c",
+        "bold": "dancing_script_bold_6b73f8ac9db17eae4e1bc1256d99df4e"
+    }
+}

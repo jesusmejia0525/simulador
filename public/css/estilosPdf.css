@@ -1,0 +1,63 @@
+
+body{
+    margin: 3cm 2cm 2cm;
+}
+header{
+    position: fixed;
+    top: 0cm;
+    left: 0cm;
+    right: 0cm;
+    height: 2cm;
+    font-size: 200.5%;
+    background-color: #085e86;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+footer{
+    position: fixed;
+    bottom: 0cm;
+    left: 0cm;
+    right: 0cm;
+    height: 2cm;
+    background-color: #585835;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+
+}
+table {
+    margin: 0cm -1cm -1cm;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  
+    caption-side: top;
+ }
+ caption, td, th {
+    padding: 0.3em;
+ }
+ tbody {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+ }
+ tbody th, tfoot th {
+    border: 0;
+ }
+ th.name {
+    width: 25%;
+ }
+ th.location {
+    width: 20%;
+ }
+ th.lasteruption {
+    width: 30%;
+ }
+ th.eruptiontype {
+    width: 25%;
+ }
+ tfoot {
+    text-align: center;
+    color: rgb(16, 102, 83);
+    font-size: 0.8em;
+ }

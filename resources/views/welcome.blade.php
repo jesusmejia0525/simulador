@@ -49,7 +49,7 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <img id="logo" src="{{asset('assets/img/logo1.png')}}">
         <a1>CrediFast</a1>
-        
+
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,7 +59,7 @@
           <li><a href="#restaurant-menu" class="page-scroll">Conocenos</a></li>
           <li><a href="#team" class="page-scroll">Prestamos</a></li>
           <li><a href="#call-reservation" class="page-scroll">Preguntas Frecuentes</a></li>
-        
+
           @guest
           @if (Route::has('login'))
           <li class="nav-item">
@@ -98,11 +98,11 @@
             <div class="intro-text">
               <h1>Simulador de Prestamos</h1>
               <a2>Obtén un Crédito en Efectivo de forma inmediata. Tú decides el plazo que necesitas para pagar en abonos semanales. </a2>
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </header>
   <!-- About Section -->
@@ -152,7 +152,7 @@
             <br>
             <center>
               <p>Nuestra misión
-Queremos transformar e impactar la vida de las personas, ayudarles a conquistar sus metas y resolver sus problemas a través de la tecnología y cuidando su salud financiera.</p>
+                Queremos transformar e impactar la vida de las personas, ayudarles a conquistar sus metas y resolver sus problemas a través de la tecnología y cuidando su salud financiera.</p>
             </center>
           </div>
         </div>
@@ -162,7 +162,7 @@ Queremos transformar e impactar la vida de las personas, ayudarles a conquistar 
             <hr>
             <br>
             <center>
-              <p>Ofrecer la mejor experiencia  A través de nuestra tecnología acercandonos a quienes necesitan soluciones financieras para impulsar su negocio, renovar su casa, comprar un auto, liquidar deudas o financiar un proyecto.</p>
+              <p>Ofrecer la mejor experiencia A través de nuestra tecnología acercandonos a quienes necesitan soluciones financieras para impulsar su negocio, renovar su casa, comprar un auto, liquidar deudas o financiar un proyecto.</p>
             </center>
           </div>
         </div>
@@ -176,7 +176,7 @@ Queremos transformar e impactar la vida de las personas, ayudarles a conquistar 
         <br>
         <center>
           <p>Hola, somos CrediFast,
-la plataforma digital de soluciones financieras, simula tu prestamo!</p>
+            la plataforma digital de soluciones financieras, simula tu prestamo!</p>
         </center>
       </div>
     </div>
@@ -198,7 +198,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
               <div class="caption">
                 <h3>Simulador de Préstamo con garantía de automovil</h3>
                 <p>Usa tu auto para obtener mejores tasas y plazos amplios.</p>
-                <a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> 
+                <a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
               <div class="caption">
                 <h3>Simulador de Prestamo con Nómina</h3>
                 <p>Accede a un financiamiento para hacer realidad tus metas con ayuda de tu nómina.</p>
-                <a href="{{ route('FrmNomina') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> 
+                <a href="{{ route('FrmNomina') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
               </div>
             </div>
           </div>
@@ -218,7 +218,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
               <div class="caption">
                 <h3>Simulador de Prestamo Hipotecario</h3>
                 <p>Usa tu casa o departamento para obtener mejores tasas y plazos amplios.</p>
-                <a href="{{ route('FrmHipotecario') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a> 
+                <a href="{{ route('FrmHipotecario') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
               </div>
             </div>
           </div>
@@ -318,7 +318,7 @@ la plataforma digital de soluciones financieras, simula tu prestamo!</p>
           <ul>
             <li><a href="https://www.facebook.com/profile.php?id=100083087078487"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://twitter.com/CrediFast_SP"><i class="fa fa-twitter"></i></a></li>
-            
+
           </ul>
         </div>
         <p>&copy; 2022 CrediFast. All rights reserved. Designed by UTN-SYSTEM</p>

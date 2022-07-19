@@ -3,9 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Session;
+use PDF;
+
 
 class HomeController extends Controller
 {
+
+    public $monto;
+    public $plazo;
+    public $tasaAnual;
+    public $fecha;
+    public $tasaMensual;
+    public $mensualidad;
+    public $intereses;
+    public $impuestos;
+    public $capital;
+    public $insoluto;
+    public $primerInteres = 0;
+    public $primerImpuesto = 0;
+    public $primerCapital = 0;
+    public $primerInsoluto = 0;
+    public $AmortizacionGlobal = array();
     /**
      * Create a new controller instance.
      *
@@ -32,25 +52,13 @@ class HomeController extends Controller
     public function FrmNomina()
     {
         return view('FrmNomina');
+        
     }
     public function FrmHipotecario()
     {
         return view('FrmHipotecario');
     }
-    public $monto;
-    public $plazo;
-    public $tasaAnual;
-    public $fecha;
-    public $tasaMensual;
-    public $mensualidad;
-    public $intereses;
-    public $impuestos;
-    public $capital;
-    public $insoluto;
-    public $primerInteres = 0;
-    public $primerImpuesto = 0;
-    public $primerCapital = 0;
-    public $primerInsoluto = 0;
+    
     public function tablas(Request $request)
     {
 
@@ -78,16 +86,26 @@ class HomeController extends Controller
      
 
         for ($i = 0; $i <  $this->plazo; $i++) {
+          
 
-            $Amortizacion[] = array(
-                'No' => ($i + 1),
+             $Amortizacion[] =array(
+               
+                    'No' => ($i + 1),
                 'Intereses' => round(HomeController::Intereses(), 2),
                 'Capital' => round(HomeController::Capital(), 2),
                 'Insoluto' => round(HomeController::SaldoInsoluto(), 2)
-
+                   
             );
+            
+               
+     
+            
         }
-        return view('tablas', compact('Amortizacion','Prestamo'));
+
+        $pdf = PDF::loadView('tablas',compact('Amortizacion','Prestamo'));
+      
+        return $pdf->stream();
+
     }
 
 
