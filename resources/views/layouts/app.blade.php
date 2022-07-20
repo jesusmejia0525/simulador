@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="app" class="intro" >
-        <nav style="background-color:blanchedalmond" class="navbar navbar-expand-md navbar-light  shadow-sm">
+        <nav style="background-color: rgba(142,182,64,1)" class="navbar navbar-expand-md navbar-light  shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                 CrediFast  

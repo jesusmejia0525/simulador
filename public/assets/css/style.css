@@ -20,10 +20,12 @@ body{
 #registration-form .imageA{
 	float:left;
 	background-image: url("../img/auto.jpg");
-	height: 1500px;
+	height: 1300px;
 	width: 50%;
 	background-size: cover;
 	background-position: 10%;
+	border-top-left-radius: 200px 200px;
+	
 }
 .imageNomina{
 	float:left;
@@ -32,6 +34,7 @@ body{
 	width: 50%;
 	background-size: cover;
 	background-position: 50%;
+	border-top-left-radius: 200px 200px;
 }
 .imageHipotecario{
 	float:left;
@@ -40,16 +43,18 @@ body{
 	width: 50%;
 	background-size: cover;
 	background-position: 50%;
+	border-top-left-radius: 200px 200px;
 }
 
 #registration-form .frmA{
 	float:right;
-	height: 1500px;
+	height: 1300px;
     width: 50%;
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
-    background-color: white;
+    background-color: rgb(150 158 165);
+	border-bottom-right-radius: 200px 200px;
 }
 .frmNomina{
 	float:right;
@@ -58,7 +63,8 @@ body{
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
-    background-color: white;
+    background-color: rgb(150 158 165);
+	border-bottom-right-radius: 200px 200px;
 }
 .frmHipotecario{
 	float:right;
@@ -67,7 +73,8 @@ body{
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
-    background-color: white;
+    background-color: rgb(150 158 165);
+	border-bottom-right-radius: 200px 200px;
 }
 
 
