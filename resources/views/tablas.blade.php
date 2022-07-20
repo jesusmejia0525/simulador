@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image" href="{{public_path('assets/img/logo1.png')}}">
+  <link rel="icon" type="image" href="{{asset('assets/img/logo1.png')}}">
   <title>CrediFast</title>
   <meta name="description" content="">
   <meta name="author" content="">
@@ -56,7 +56,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <td style="color:#456789;font-size:250%;" colspan="5" align="center" scope="col"> Préstamo</td>
+                    <td style="color:#456789;font-size:250%;" colspan="5" align="center" scope="col">Préstamo</td>
                 </tr>
                 <tr>
                     <th width='20%'>Monto Crédito</th>
@@ -80,7 +80,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <td style="color:#456789;font-size:250%;" colspan="5" align="center" scope="col">Amortizacion</td>
+                    <td style="color:#456789;font-size:250%;" colspan="5" align="center" scope="col">Amortización</td>
                 </tr>
                 <tr>
                     <th width='40%'>Num. Pago</th>

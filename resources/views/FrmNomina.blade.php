@@ -3,12 +3,13 @@
 <div class="container" id="registration-form">
     <div class="imageNomina"></div> 
     <div class="frmNomina">
-        <h3 id="h1-form">Ingrese los datos de su nomina</h3>
+        <h3 id="h1-form">Ingrese los datos de su nómina</h3>
         <form action="{{ route ('tablas')}}" method="POST">
         {{ csrf_field() }}
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input class="form-control" value="{{Auth::user()->name}}" type="text" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
+                <h12>*Ingrese solo letras*</h12> 
             </div>
             <div class="form-group">
                 <label for="contrato">Tipo de contrato:</label>
@@ -35,6 +36,7 @@
             <div class="form-group">
                 <label for="pagos">Cantidad de pagos extras:</label>
                 <input class="form-control" type="number" name="pagos" id="pagos" placeholder="Pagos" required step="1" min="1" max="100" >
+                <h12>*Ingrese solo números*</h12> 
             </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
@@ -43,6 +45,7 @@
             <div class="form-group">
                 <label for="monto">Monto:</label>
                 <input class="form-control"  type="number" name="monto" id="monto" placeholder="Monto" min="500" >
+                <h12>*Ingrese solo números*</h12> 
             </div> 
             <div class="form-group">
                 <label for="periodo">Periodos del plazo de pago:</label>
@@ -54,12 +57,14 @@
                 </label>
             </div>
             <div class="form-group">
-                <label for="plazo">Numero de plazos:</label>
+                <label for="plazo">Número de plazos:</label>
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
+                <h12>*Ingrese solo números Min:1, Max:120*</h12> 
             </div> 
             <div class="form-group">
-                <label for="interes">Interes:</label>
+                <label for="interes">Intéres:</label>
                 <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01">
+                <h12>*Ingrese solo números Min:1, Max:100*</h12> 
             </div>    
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg">Simular</button>

@@ -56,14 +56,14 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about" class="page-scroll">Acerca De</a></li>
-          <li><a href="#restaurant-menu" class="page-scroll">Conocenos</a></li>
-          <li><a href="#team" class="page-scroll">Prestamos</a></li>
+          <li><a href="#restaurant-menu" class="page-scroll">Conócenos</a></li>
+          <li><a href="#team" class="page-scroll">Préstamos</a></li>
           <li><a href="#call-reservation" class="page-scroll">Preguntas Frecuentes</a></li>
 
           @guest
           @if (Route::has('login'))
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesion') }}</a>
+            <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
           </li>
           @endif
 
@@ -96,7 +96,7 @@
         <div class="container">
           <div class="row">
             <div class="intro-text">
-              <h1>Simulador de Prestamos</h1>
+              <h1>Simulador de Préstamos</h1>
               <a2>Obtén un Crédito en Efectivo de forma inmediata. Tú decides el plazo que necesitas para pagar en abonos semanales. </a2>
             </div>
           </div>
@@ -110,7 +110,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6 ">
-          <div class="about-img"><img id="img-about" src="{{asset('assets/img/prestamos.jpg')}}" class="img-responsive" alt=""></div>
+          <div class="about-img"><img id="img-about" src="{{asset('assets/img/prestamos.svg')}}" class="img-responsive" alt=""></div>
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="about-text">
@@ -176,7 +176,7 @@
         <br>
         <center>
           <p>Hola, somos CrediFast,
-            la plataforma digital de soluciones financieras, simula tu prestamo!</p>
+            la plataforma digital de soluciones financieras, simula tu préstamo!</p>
         </center>
       </div>
     </div>
@@ -198,7 +198,7 @@
               <div class="caption">
                 <h3>Simulador de Préstamo con garantía de automovil</h3>
                 <p>Usa tu auto para obtener mejores tasas y plazos amplios.</p>
-                <a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
+                <a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Préstamo</a>
               </div>
             </div>
           </div>
@@ -206,9 +206,9 @@
             <div class="thumbnail">
               <div class="team-img"><img src="{{asset('assets/img/team/02.jpg')}}" alt="..."></div>
               <div class="caption">
-                <h3>Simulador de Prestamo con Nómina</h3>
+                <h3>Simulador de Préstamo con Nómina</h3>
                 <p>Accede a un financiamiento para hacer realidad tus metas con ayuda de tu nómina.</p>
-                <a href="{{ route('FrmNomina') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
+                <a href="{{ route('FrmNomina') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Préstamo</a>
               </div>
             </div>
           </div>
@@ -216,9 +216,9 @@
             <div class="thumbnail">
               <div class="team-img"><img src="{{asset('assets/img/team/03.jpg')}}" alt="..."></div>
               <div class="caption">
-                <h3>Simulador de Prestamo Hipotecario</h3>
+                <h3>Simulador de Préstamo Hipotecario</h3>
                 <p>Usa tu casa o departamento para obtener mejores tasas y plazos amplios.</p>
-                <a href="{{ route('FrmHipotecario') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Prestamo</a>
+                <a href="{{ route('FrmHipotecario') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Préstamo</a>
               </div>
             </div>
           </div>
