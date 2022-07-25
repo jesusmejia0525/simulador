@@ -6,20 +6,18 @@
         <h3 id="h1-form">Ingrese los datos de su préstamo hipotecario automóvil</h3>
         <form action="{{ route ('tablas')}}" method="POST">
         {{ csrf_field() }} 
+        <input name="tipo" id="tipo" value="1"  hidden type="number">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input class="form-control"  type="text" value="{{Auth::user()->name}}" name="nombre" id="nombre" placeholder="Nombre" required pattern="[A-Za-z ]{3,100}">
-            <h12>*Ingrese solo letras*</h12>
         </div>
         <div class="form-group">
             <label for="marca">Marca:</label>
             <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca" required pattern="[A-Za-z ]{3,100}">
-            <h12>*Ingrese solo letras*</h12>        
         </div>
         <div class="form-group">
             <label for="modelo">Modelo:</label>
             <input class="form-control"  type="text" name="modelo" id="modelo" placeholder="Modelo" required pattern="[A-Za-z ]{3,100}">
-            <h12>*Ingrese solo letras*</h12>        
         </div>
        <div class="form-group">
             <label for="ano">Año automóvil:</label>
@@ -52,7 +50,6 @@
         <div class="form-group">
             <label for="version">Versión:</label>
             <input class="form-control"  type="text" name="version" id="version" placeholder="Versión" required pattern="[0-9 ]{1}[A-Za-z ]{0,100}">
-            <h12>*Ingrese el número de puertas con los que cuenta el auto*</h12>
         </div>
         <div class="form-group">
             <label for="km">Kilometraje aproximado:</label>
@@ -70,12 +67,11 @@
                 <option class="form-control" value="90,001 - 100,000">90,001 - 100,000</option>
                 <option class="form-control" value="100,001 - 125,000">100,001 - 125,000</option>
                 <option class="form-control" value="125,001 - 150,000">125,001 - 150,000</option>
-            </select> 
+            </select>
         </div> 
         <div class="form-group">
             <label for="color">Color del automóvil:</label>
             <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required pattern="[A-Za-z ]{3,100}">
-            <h12>*Ingrese solo letras*</h12>
         </div>
         <div class="form-group">
             <label for="estPlaca">Estado al que pertenece la placa:</label>
@@ -112,11 +108,11 @@
                 <option class="form-control" value="Yucatan">Yucatán</option>
                 <option class="form-control" value="Zacatecas">Zacatecas</option>
             </select>
+
         </div>
         <div class="form-group">
             <label for="monto">Monto:</label>
             <input class="form-control"  type="number" name="monto" id="monto" placeholder="Monto" min="500" required>
-            <h12>*Ingrese solo números arriba de 500*</h12>
         </div>
         <div class="form-group">
                 <label for="periodo">Periodos del plazo de pago:</label>
@@ -130,17 +126,14 @@
             <div class="form-group">
                 <label for="plazo">Duración del plazo:</label>
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
-                <h12>*Ingrese solo números Min:1, Max:120*</h12>
             </div>
         <div class="form-group">
-            <label  for="interes">Intéres:</label>
+            <label  for="interes">Interes:</label>
             <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01">
-            <h12>*Ingrese solo números Min:5, Max:100*</h12>
         </div>
         <div class="form-group">
             <label for="cancelación">Coste de cancelación:</label>
             <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="Cancelación %" min="5" max="100" required>
-            <h12>*Ingrese solo números Min:5, Max:100*</h12>       
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg">Simular</button>

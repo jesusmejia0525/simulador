@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Session;
 use PDF;
+use Illuminate\Support\Carbon;
 
 
 class HomeController extends Controller
@@ -52,17 +53,17 @@ class HomeController extends Controller
     public function FrmNomina()
     {
         return view('FrmNomina');
-        
     }
     public function FrmHipotecario()
     {
         return view('FrmHipotecario');
     }
-    
+
     public function tablas(Request $request)
     {
 
 
+        $tipo = $request->tipo;
         $nombre = $request->nombre;
         $this->fecha =  $request->fecha;
         $this->monto = $request->monto;
@@ -70,42 +71,53 @@ class HomeController extends Controller
         $this->tasaAnual = $request->interes;
         $this->plazo = $request->plazo;
 
+        switch ($tipo) {
+            case 0:
+                $nomtipo = "Hipotecario";
+                break;
+            case 1:
+                $nomtipo = "Garantía de Automovil";
+                break;
+            case 2:
+                $nomtipo = "Nómina";
+                break;
+        }
+
         // Tabla Monto de prestamo
         // $miArreglo2 = ['Monto Credito', 'TI anual', 'Numero de Pagos', 'Pago Mensual'];
-        $Prestamo=array(
-           'MontoCredito'=> $request->monto,
-           'TIAnual'=> $this->tasaAnual,
-           'NumeroPagos'=> $this->plazo,
-           'PagoMensual'=>round(HomeController::PagoMensual($request), 2)
-       ); 
+        $Prestamo = array(
+            'MontoCredito' => $request->monto,
+            'TIAnual' => $this->tasaAnual,
+            'NumeroPagos' => $this->plazo,
+            'PagoMensual' => round(HomeController::PagoMensual($request), 2)
+        );
 
         // Tabla Monto de Amortizacion
         // miArreglo = ['No.', 'Intereses', 'Impuestos', 'Capital', 'Insoluto']
         HomeController::PagoMensual();
         HomeController::calcularTotalPrestamo();
-     
+
 
         for ($i = 0; $i <  $this->plazo; $i++) {
-          
 
-             $Amortizacion[] =array(
-               
-                    'No' => ($i + 1),
+
+            $Amortizacion[] = array(
+
+                'No' => ($i + 1),
                 'Intereses' => round(HomeController::Intereses(), 2),
                 'Capital' => round(HomeController::Capital(), 2),
                 'Insoluto' => round(HomeController::SaldoInsoluto(), 2)
-                   
+
             );
-            
-               
-     
-            
+            $date = Carbon::now();
+            $date = $date->format('d-m-Y');
+            $endDate = Carbon::parse($request->date)->addDays(15);
+            $endDate = $endDate->format('d-m-Y');
         }
 
-        $pdf = PDF::loadView('tablas',compact('Amortizacion','Prestamo'));
-      
-        return $pdf->stream();
+        $pdf = PDF::loadView('tablas', compact('Amortizacion', 'Prestamo', 'date', 'endDate','nomtipo'));
 
+        return $pdf->stream('cotizacion');
     }
 
 
@@ -165,7 +177,7 @@ class HomeController extends Controller
         return  $this->impuestos;
     }
 
-    function Capital( )
+    function Capital()
     {
         if ($this->primerCapital == 0) {
             $this->capital = $this->mensualidad - $this->primerInteres;
@@ -176,7 +188,7 @@ class HomeController extends Controller
         return  $this->capital;
     }
 
-    function SaldoInsoluto( )
+    function SaldoInsoluto()
     {
         if ($this->primerInsoluto == 0) {
             $this->insoluto = $this->monto - $this->primerCapital;
@@ -187,5 +199,4 @@ class HomeController extends Controller
         }
         return  $this->insoluto;
     }
-
 }
