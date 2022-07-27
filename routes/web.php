@@ -23,7 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 
-
+Route::get('/pdf', [App\Http\Controllers\HomeController::class, 'pdf'])->name('PDF')->middleware('auth');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
 Route::get('/FrmAuto', [App\Http\Controllers\HomeController::class, 'FrmAuto'])->name('FrmAuto')->middleware('auth');
 Route::get('/index', [App\Http\Controllers\PrestamoController::class, 'index'])->name('index')->middleware('auth');

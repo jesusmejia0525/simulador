@@ -1,13 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Session;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Session;
 use PDF;
 use Illuminate\Support\Carbon;
-
+use PhpParser\ErrorHandler\Collecting;
 
 class HomeController extends Controller
 {
@@ -44,7 +43,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('welcome');
     }
     public function FrmAuto()
     {
@@ -57,6 +56,15 @@ class HomeController extends Controller
     public function FrmHipotecario()
     {
         return view('FrmHipotecario');
+    }
+    public function pdf(Request $request){
+        $date = Carbon::now();
+        $date = $date->format('d-m-Y');
+        $endDate = Carbon::parse($request->date)->addDays(15);
+        $endDate = $endDate->format('d-m-Y');
+        $pdf = PDF::loadView('pdf', compact('date', 'endDate'));
+
+        return $pdf->stream('cotizacion');
     }
 
     public function tablas(Request $request)
@@ -74,12 +82,15 @@ class HomeController extends Controller
         switch ($tipo) {
             case 0:
                 $nomtipo = "Hipotecario";
+                Session::put('nomtipo', $nomtipo);
                 break;
             case 1:
                 $nomtipo = "Garantía de Automovil";
+                Session::put('nomtipo', $nomtipo);
                 break;
             case 2:
                 $nomtipo = "Nómina";
+                Session::put('nomtipo', $nomtipo);
                 break;
         }
 
@@ -91,6 +102,7 @@ class HomeController extends Controller
             'NumeroPagos' => $this->plazo,
             'PagoMensual' => round(HomeController::PagoMensual($request), 2)
         );
+       
 
         // Tabla Monto de Amortizacion
         // miArreglo = ['No.', 'Intereses', 'Impuestos', 'Capital', 'Insoluto']
@@ -101,23 +113,19 @@ class HomeController extends Controller
         for ($i = 0; $i <  $this->plazo; $i++) {
 
 
-            $Amortizacion[] = array(
+            $Amortizacion[]=collect([
 
                 'No' => ($i + 1),
                 'Intereses' => round(HomeController::Intereses(), 2),
                 'Capital' => round(HomeController::Capital(), 2),
                 'Insoluto' => round(HomeController::SaldoInsoluto(), 2)
 
-            );
-            $date = Carbon::now();
-            $date = $date->format('d-m-Y');
-            $endDate = Carbon::parse($request->date)->addDays(15);
-            $endDate = $endDate->format('d-m-Y');
+            ]);
+            Session::put('cart', $Amortizacion);
         }
 
-        $pdf = PDF::loadView('tablas', compact('Amortizacion', 'Prestamo', 'date', 'endDate','nomtipo'));
-
-        return $pdf->stream('cotizacion');
+        
+        return view('tablas', compact('Prestamo'));
     }
 
 
