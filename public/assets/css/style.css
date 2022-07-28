@@ -31,7 +31,8 @@ h12{
 	width: 50%;
 	background-size: cover;
 	background-position: 10%;
-	border-top-left-radius: 200px 200px;
+	border-top-left-radius: 100px 100px;
+	border-bottom-left-radius: 100px 100px;
 	
 }
 .imageNomina{
@@ -41,7 +42,8 @@ h12{
 	width: 50%;
 	background-size: cover;
 	background-position: 50%;
-	border-top-left-radius: 200px 200px;
+	border-top-left-radius: 100px 100px;
+	border-bottom-left-radius: 100px 100px;
 }
 .imageHipotecario{
 	float:left;
@@ -50,7 +52,8 @@ h12{
 	width: 50%;
 	background-size: cover;
 	background-position: 50%;
-	border-top-left-radius: 200px 200px;
+	border-top-left-radius: 100px 100px;
+	border-bottom-left-radius: 100px 100px;
 }
 
 #registration-form .frmA{
@@ -60,8 +63,9 @@ h12{
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
-    background-color:rgb(255, 255, 255);
-	border-bottom-right-radius: 200px 200px;
+    background-color: #DCEDC8;
+	border-top-right-radius: 100px 100px;
+	border-bottom-right-radius: 100px 100px;
 }
 .frmNomina{
 	float:right;
@@ -70,8 +74,9 @@ h12{
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
-    background-color: rgb(255, 255, 255);
-	border-bottom-right-radius: 200px 200px;
+    background-color: #DCEDC8;
+	border-top-right-radius: 100px 100px;
+	border-bottom-right-radius: 100px 100px;
 }
 .frmHipotecario{
 	float:right;
@@ -80,8 +85,9 @@ h12{
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
-    background-color: rgb(255, 255, 255);
-	border-bottom-right-radius: 200px 200px;
+    background-color: #DCEDC8;
+	border-top-right-radius: 100px 100px;
+	border-bottom-right-radius: 100px 100px;
 }
 
 
@@ -346,7 +352,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) no-repeat center center;
+	background: url(../img/credito.png) no-repeat center center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

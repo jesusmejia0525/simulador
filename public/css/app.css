@@ -2032,9 +2032,9 @@ progress {
 }
 
 .table>:not(caption)>*>* {
-    background-color: var(--bs-table-bg);
+    background-color: #DCEDC8;
     border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    box-shadow: inset 0 0 0 1.9px #00000085;
     padding: .5rem
 }
 

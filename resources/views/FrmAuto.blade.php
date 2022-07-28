@@ -49,7 +49,7 @@
         </div>
         <div class="form-group">
             <label for="version">Versión:</label>
-            <input class="form-control"  type="text" name="version" id="version" placeholder="Versión" required pattern="[0-9 ]{1}[A-Za-z ]{0,100}">
+            <input class="form-control"  type="text" name="version" id="version" placeholder="Versión" required pattern="[0-9]{1}[A-Za-z ]{0,100}">
         </div>
         <div class="form-group">
             <label for="km">Kilometraje aproximado:</label>
@@ -129,11 +129,11 @@
             </div>
         <div class="form-group">
             <label  for="interes">Interes:</label>
-            <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="5" max="100" step=".01">
+            <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="11" max="13" step=".1">
         </div>
         <div class="form-group">
             <label for="cancelación">Coste de cancelación:</label>
-            <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="Cancelación %" min="5" max="100" required>
+            <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="Cancelación %" min=".5" max="5" step=".1" required>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg">Simular</button>
