@@ -39,7 +39,7 @@
             </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
-                <input class="form-control" type="datetime" value="<?php echo date("Y-m-d");?>" name="fecha" id="fecha" required>
+                <input class="form-control" disabled type="datetime" value="<?php echo date("d-m-Y");?>" name="fecha" id="fecha" required>
             </div>
             <div class="form-group">
                 <label for="monto">Monto:</label>
@@ -60,7 +60,7 @@
             </div> 
             <div class="form-group">
                 <label for="interes">Interes:</label>
-                <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %"  min="11" max="13" step=".1">
+                <input class="form-control" value="12" disabled type="number" name="interes" id="interes" placeholder="Interés %"  min="11" max="13" step=".1">
             </div>    
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg">Simular</button>

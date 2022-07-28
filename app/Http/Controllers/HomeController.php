@@ -76,7 +76,7 @@ class HomeController extends Controller
         $this->fecha =  $request->fecha;
         $this->monto = $request->monto;
         $periodo = $request->periodo;
-        $this->tasaAnual = $request->interes;
+        $this->tasaAnual = 12;
         $this->plazo = $request->plazo;
 
         switch ($tipo) {

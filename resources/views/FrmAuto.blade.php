@@ -71,7 +71,7 @@
         </div> 
         <div class="form-group">
             <label for="color">Color del automóvil:</label>
-            <input class="form-control"  type="text" name="color" id="color" placeholder="Color" required pattern="[A-Za-z ]{3,100}">
+            <input class="form-control"  type="text" name="color" id="color" placeholder="color" required pattern="[A-Za-z ]{3,100}">
         </div>
         <div class="form-group">
             <label for="estPlaca">Estado al que pertenece la placa:</label>
@@ -129,11 +129,11 @@
             </div>
         <div class="form-group">
             <label  for="interes">Interes:</label>
-            <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %" min="11" max="13" step=".1">
+            <input class="form-control" type="number" value="12" disabled name="interes" id="interes" placeholder="Interés %" min="11" max="13" step=".1">
         </div>
         <div class="form-group">
             <label for="cancelación">Coste de cancelación:</label>
-            <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="Cancelación %" min=".5" max="5" step=".1" required>
+            <input class="form-control"  type="number" value="10" disabled name="cancelación" id="cancelación" placeholder="Cancelación %" min=".5" max="5" step=".1" required>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg">Simular</button>

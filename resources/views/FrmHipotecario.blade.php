@@ -37,11 +37,11 @@
             </div>
             <div class="form-group">
                 <label for="cancelación">Coste de cancelación:</label>
-                <input class="form-control"  type="number" name="cancelación" id="cancelación" placeholder="Cancelación %" min=".5" max="5" step=".1" required>
+                <input class="form-control"  type="number" value="10" disabled name="cancelación" id="cancelación" placeholder="Cancelación %" min=".5" max="5" step=".1" required>
             </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
-                <input class="form-control"  type="datetime" value="<?php echo date("Y-m-d");?>" name="fecha" id="fecha" required>
+                <input class="form-control"  type="datetime" disabled value="<?php echo date("d-m-Y");?>" name="fecha" id="fecha" required>
             </div>
             <div class="form-group">
                 <label for="monto">Monto:</label>
@@ -62,7 +62,7 @@
             </div>
             <div class="form-group">
                 <label for="interes">Interes:</label>
-                <input class="form-control" type="number" name="interes" id="interes" placeholder="Interés %"  min="11" max="13" step=".1" required > 
+                <input class="form-control" value="12" disabled type="number" name="interes" id="interes" placeholder="Interés %"  min="11" max="13" step=".1" required > 
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg">Simular</button>
