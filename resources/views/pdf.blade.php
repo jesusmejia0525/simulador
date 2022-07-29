@@ -62,7 +62,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th class="titulo" scope="col" colspan="4" align="center"><b>Cotización de Prestamo</b></th>
+                    <th class="titulo" scope="col" colspan="4" align="center"><b>Cotización de Préstamo</b></th>
                 </tr>
             </thead>
             <tbody>
@@ -75,7 +75,7 @@
                 <tr>
                     <th scope="row">Vigencia</th>
                     <td>{{$endDate}}</td>
-                    <th scope="row">Tipo de Prestamo</th>
+                    <th scope="row">Tipo de Préstamo</th>
                     
                     <td>{{Session::get('nomtipo')}}</td>
                 </tr>
@@ -86,10 +86,10 @@
         <table class="table">
             <thead>
                 <tr>
-                    <td style="color:#456789;font-size:250%;" colspan="5" align="center" scope="col">Amortizacion</td>
+                    <td style="color:#456789;font-size:250%;" colspan="5" align="center" scope="col">Amortización</td>
                 </tr>
                 <tr>
-                    <th width='40%'>Num. Pago</th>
+                    <th width='40%'>Núm. Pago</th>
                     <th width='15%' class="texr-center">Pago Interés</th>
                     <th width='20%' class="texr-center">Pagos Capital</th>
                     <th width='20%' class="texr-center">Saldo</th>

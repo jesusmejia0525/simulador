@@ -78,7 +78,7 @@
       <h3>Dirección</h3>
       <div class="contact-item">
         <p>889 Xochimilco,</p>
-        <p>Ciudad de Mexico, CP. 16020</p>
+        <p>Ciudad de México, CP. 16020</p>
       </div>
     </div>
     <div class="col-md-4">
@@ -92,7 +92,7 @@
       <h3>Información de Contacto</h3>
       <div class="contact-item">
                <p><a href="tel:tel:5562401262">Celular: +52 55 62 40 12 62</a></p>
-          <p><a href="mailto:credifast@company.com"> Correo:credifast@company.com</a></p>
+          <p><a href="mailto:credifast@company.com"> Correo: credifast@company.com</a></p>
       </div>
     </div>
   </div>

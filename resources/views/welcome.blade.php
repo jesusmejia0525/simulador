@@ -74,7 +74,7 @@
 
             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-              {{ __('Salir Sesion') }}
+              {{ __('Salir Sesión') }}
             </a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -125,7 +125,7 @@
             <p>Es un tipo de préstamo en el que utilizas un inmueble, tu auto o tu nómina como garantía de pago. Al estar respaldado obtendrás más dinero a mayores plazos.</p>
             <p> Con Nosotros tendrás:</p>
             <img id="icon" src="{{asset('assets/img/icon_doc.png')}}">
-            <a3> Pre-aprobación en 24 horas hábiles.</a3>
+            <a3> Preaprobación en 24 horas hábiles.</a3>
             <br><br><img id="icon" src="{{asset('assets/img/icon_rel.png')}}">
             <a3> Plazos flexibles con menos intereses.</a3>
             <br><br><img id="icon" src="{{asset('assets/img/icon_user.png')}}">
@@ -162,7 +162,7 @@
             <hr>
             <br>
             <center>
-              <p>Ofrecer la mejor experiencia A través de nuestra tecnología acercandonos a quienes necesitan soluciones financieras para impulsar su negocio, renovar su casa, comprar un auto, liquidar deudas o financiar un proyecto.</p>
+              <p>Ofrecer la mejor experiencia A través de nuestra tecnología acercándonos a quienes necesitan soluciones financieras para impulsar su negocio, renovar su casa, comprar un auto, liquidar deudas o financiar un proyecto.</p>
             </center>
           </div>
         </div>
@@ -175,7 +175,7 @@
         <hr>
         <br>
         <center>
-          <p>Hola, somos CrediFast,
+          <p>¡Hola, somos CrediFast,
             la plataforma digital de soluciones financieras, simula tu préstamo!</p>
         </center>
       </div>
@@ -196,7 +196,7 @@
             <div class="thumbnail">
               <div class="team-img"><img src="{{asset('assets/img/team/01.jpg')}}" alt="..."></div>
               <div class="caption">
-                <h3>Simulador de Préstamo con garantía de automovil</h3>
+                <h3>Simulador de Préstamo con garantía de automóvil</h3>
                 <p>Usa tu auto para obtener mejores tasas y plazos amplios.</p>
                 <a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Préstamo</a>
               </div>
@@ -245,7 +245,7 @@
       <h1>¿Qué documentos necesito para aplicar a un préstamo con garantía hipotecaria?</h1>
     </summary>
     <div>
-      <p>Puedes solicitar un prestamo con simples datos como: <br> Nombre y apellido, fecha de nacimiento, número de celular o fijo, email, tipo de trabajo actual, ubicación del inmueble o marca del vehículo en garantía, ingreso mensual, posible uso del préstamos y plazo de pago.</p>
+      <p>Puedes solicitar un préstamo con simples datos como: <br> Nombre y apellido, fecha de nacimiento, número de celular o fijo, email, tipo de trabajo actual, ubicación del inmueble o marca del vehículo en garantía, ingreso mensual, posible uso del préstamos y plazo de pago.</p>
     </div>
   </details>
   <details>
@@ -280,7 +280,7 @@
       <h1>¿Puedo vender o transferir el inmueble que usé como garantía?</h1>
     </summary>
     <div>
-      <p>Claro que puedes, mientras hagas el pago total del préstamo. Esto puede ser en la misma transacción de compra-venta dejando claro al comprador que primero se debe liquidar el préstamo y el remanente se te pague a ti.</p>
+      <p>Claro que puedes, mientras hagas el pago total del préstamo. Esto puede ser en la misma transacción de compraventa dejando claro al comprador que primero se debe liquidar el préstamo y el remanente se te pague a ti.</p>
     </div>
     <br>
     <br>
@@ -294,7 +294,7 @@
         <h3>Dirección</h3>
         <div class="contact-item">
           <p>889 Xochimilco,</p>
-          <p>Ciudad de Mexico, CP. 16020</p>
+          <p>Ciudad de México, CP. 16020</p>
         </div>
       </div>
       <div class="col-md-4">
@@ -308,7 +308,7 @@
         <h3>Información de Contacto</h3>
         <div class="contact-item">
           <p><a href="tel:tel:5562401262">Celular: +52 55 62 40 12 62</a></p>
-          <p><a href="mailto:credifast@company.com"> Correo:credifast@company.com</a></p>
+          <p><a href="mailto:credifast@company.com"> Correo: credifast@company.com</a></p>
         </div>
       </div>
     </div>

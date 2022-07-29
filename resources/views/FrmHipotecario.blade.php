@@ -61,7 +61,7 @@
                 <input class="form-control"  type="number" name="plazo" id="plazo" min="1" max="120" step="1">
             </div>
             <div class="form-group">
-                <label for="interes">Interes:</label>
+                <label for="interes">Interés:</label>
                 <input class="form-control" value="12" disabled type="number" name="interes" id="interes" placeholder="Interés %"  min="11" max="13" step=".1" required > 
             </div>
             <div class="form-group">
