@@ -26,17 +26,6 @@
                     <option class="form-control" value="soltero">Soltero</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label for="bj">Baja Medica:</label>
-                <select class="form-control" name="bj" id="bj">
-                    <option class="form-control"  value="medica">Medica</option>
-                    <option class="form-control" value="peternidad">Paternidad</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="pagos">Cantidad de pagos extras:</label>
-                <input class="form-control" type="number" name="pagos" id="pagos" placeholder="Pagos" required step="1" min="1" max="100" >
-            </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
                 <input class="form-control" disabled type="datetime" value="<?php echo date("d-m-Y");?>" name="fecha" id="fecha" required>

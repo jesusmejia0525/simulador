@@ -68,6 +68,10 @@
           
             </div>
         </nav>
+        <br>
+    <br>
+    <br>
+    <br>
 
         <main class="py-1">
             @yield('content')

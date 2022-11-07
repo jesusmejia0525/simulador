@@ -192,17 +192,7 @@
           <p>Explora todas las soluciones que tenemos para ti.</p>
         </div>
         <div id="row">
-          <div class="col-md-4 team">
-            <div class="thumbnail">
-              <div class="team-img"><img src="{{asset('assets/img/team/01.jpg')}}" alt="..."></div>
-              <div class="caption">
-                <h3>Simulador de Préstamo con garantía de automovil</h3>
-                <p>Usa tu auto para obtener mejores tasas y plazos amplios.</p>
-                <a href="{{ route('FrmAuto') }}" class="btn btn-custom btn-lg page-scroll">Simula tu Préstamo</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 team">
+          <div class="col-md-6 team">
             <div class="thumbnail">
               <div class="team-img"><img src="{{asset('assets/img/team/02.jpg')}}" alt="..."></div>
               <div class="caption">
@@ -212,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 team">
+          <div class="col-md-14 team">
             <div class="thumbnail">
               <div class="team-img"><img src="{{asset('assets/img/team/03.jpg')}}" alt="..."></div>
               <div class="caption">

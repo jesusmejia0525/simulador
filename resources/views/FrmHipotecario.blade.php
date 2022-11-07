@@ -35,10 +35,6 @@
                     </select>
                 </label>
             </div>
-            <div class="form-group">
-                <label for="cancelación">Coste de cancelación:</label>
-                <input class="form-control"  type="number" value="10" disabled name="cancelación" id="cancelación" placeholder="Cancelación %" min=".5" max="5" step=".1" required>
-            </div>
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
                 <input class="form-control"  type="datetime" disabled value="<?php echo date("d-m-Y");?>" name="fecha" id="fecha" required>
