@@ -26,6 +26,7 @@
                     <option class="form-control" value="soltero">Soltero</option>
                 </select>
             </div>
+
              <div class="form-group">
                 <label for="fecha">Fecha:</label>
                 <input class="form-control" disabled type="datetime" value="<?php echo date("d-m-Y");?>" name="fecha" id="fecha" required>
